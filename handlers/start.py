@@ -43,25 +43,25 @@ async def start_(client: Client, message: Message):
             [ 
                 [
                     InlineKeyboardButton(
-                        "** ➕ꪖᦔᦔ ꪑꫀ 𝓽ꪮ ꪗꪮꪊ𝘳 ᧁ𝘳ꪮꪊρ➕ **", url=f"https://t.me/BLAZEMUSIC_BOT?startgroup=true")
+                        " ➕ ꪖᦔᦔ ꪑꫀ 𝓽ꪮ ꪗꪮꪊ𝘳 ᧁ𝘳ꪮꪊρ ➕ ", url=f"https://t.me/BLAZEMUSIC_BOT?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "** нσω тσ υsε мε🎧** ", callback_data="cbhowtouse")
+                        "ꫝꪮ᭙ 𝓽ꪮ ꪊ𝘴ꫀ ꪑꫀ 🎧", callback_data="cbhowtouse")
                 ],[
                     InlineKeyboardButton(
-                         "** cм∂s🕹 **", callback_data="cbcmds"
+                         " ᥴꪑᦔ𝘴 🕹 ", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "** Mα∂ε Bү 🕵 **", url=f"https://t.me/Timesisnotwaiting")
+                        " ꪮ᭙ꪀꫀ𝘳 🕵 ", url=f"https://t.me/Timesisnotwaiting")
                 ],[
                     InlineKeyboardButton(
-                        "** Sυρρσят Gяσυρ📣 **", url=f"https://t.me/Blaze_Support"
+                        " 𝘴ꪊρρꪮ𝘳𝓽 ᧁ𝘳ꪮꪊρ 📣 ", url=f"https://t.me/Blaze_Support"
                     ),
                     InlineKeyboardButton(
-                        "** Oғғιcιαℓ Cнαηηεℓ📢 **", url=f"https://t.me/THE_BLAZE_NETWORK")
+                        " ꪮᠻᠻ𝓲ᥴ𝓲ꪖꪶ ᥴꫝꪖꪀꪀꫀꪶ 📢 ", url=f"https://t.me/THE_BLAZE_NETWORK")
                 ],[
                     InlineKeyboardButton(
-                        "** Sρꪖꪑ G𝘳ꪮꪊρ📡 **", url="https://t.me/BLAZE_SPAMMER")
+                        " Sρꪖꪑ G𝘳ꪮꪊρ 📡 ", url="https://t.me/BLAZE_SPAMMER")
                 ],
             ]
         ),
@@ -80,10 +80,10 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "** ᧁ𝘳ꪮꪊρ👥 **", url=f"https://t.me/Blaze_Support"
+                        " ᧁ𝘳ꪮꪊρ 👥 ", url=f"https://t.me/Blaze_Support"
                     ),
                     InlineKeyboardButton(
-                        "** ᥴꫝꪖꪀꪀꫀꪶ📣 ** ", url=f"https://t.me/THE_BLAZE_NETWORK"
+                        " ᥴꫝꪖꪀꪀꫀꪶ 📣  ", url=f"https://t.me/THE_BLAZE_NETWORK"
                     )
                 ]
             ]
@@ -102,7 +102,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="** нσω тσ υsε мε❓ **", callback_data=f"cbguide"
+                        text=" ꫝꪮ᭙ 𝓽ꪮ ꪊ𝘴ꫀ ꪑꫀ ❓ ", callback_data=f"cbguide"
                     )
                 ]
             ]
@@ -121,28 +121,28 @@ async def help_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "** вαsιc cм∂s☺ **", callback_data="cbbasic"
+                        "ᗷꪖ𝘴𝓲ᥴ ᥴꪑᦔ𝘴 ☺ ", callback_data="cbbasic"
                     ),
                     InlineKeyboardButton(
-                        "** α∂vαηcε∂ cм∂s🤗 **", callback_data="cbadvanced"
+                        " ꪖᦔꪜꪖꪀᥴꫀᦔ ᥴꪑᦔ𝘴 🤗 ", callback_data="cbadvanced"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "** α∂∂мιηs cм∂s🔹🔹 **", callback_data="cbadmin"
+                        " ꪖᦔᦔꪑ𝓲ꪀ𝘴 ᥴꪑᦔ𝘴 🖱️", callback_data="cbadmin"
                     ),
                     InlineKeyboardButton(
-                        "** sυ∂σ cм∂s✒ **", callback_data="cbsudo"
+                        " 𝘴ꪊᦔꪮ ᥴꪑᦔ𝘴 💡", callback_data="cbsudo"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "** ꪮ᭙ꪀꫀ𝘳 ᥴꪑᦔ𝘴📁 **", callback_data="cbowner"
+                        " ꪮ᭙ꪀꫀ𝘳 ᥴꪑᦔ𝘴📁 ", callback_data="cbowner"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "** ᠻꪊꪀ ᥴꪑᦔ𝘴 🎗 **", callback_data="cbfun"
+                        " ᠻꪊꪀ ᥴꪑᦔ𝘴 🎗 ", callback_data="cbfun"
                     )
                 ]
             ]
@@ -157,7 +157,7 @@ async def ping_pong(client: Client, message: Message):
     delta_ping = time() - start
     await m_reply.edit_text(
         "╰•★★  ℘ơŋɠ ★★•╯"
-        f"⚔️【★᥇ꪶꪖɀꫀ ★】 ꪑꪊ𝘴𝓲ᥴ★➤➤♛ \n\n╰★╯Ɽꪊ𝘬ꪮ 𝓳ꪖ𝘳ꪖ 𝘴ꪖ᥇ꪖ𝘳 𝘬ꪖ𝘳ꪮ...╰★╯\  `{delta_ping * 1000:.3f} ꪑ𝘴`"
+        f"\n 𝘽𝙇𝘼𝙕𝙀 𝙈𝙐𝙎𝙄𝘾 𝘽𝙊𝙏 `{delta_ping * 1000:.3f} ꪑ𝘴`"
     )
 
 
