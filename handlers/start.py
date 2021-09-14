@@ -34,7 +34,7 @@ async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>**☞ ✰ᗯᴇʟᴄᴏᴍᴇ {message.from_user.first_name}** \n
 **☞ ✰I'ᴍ ᑭʟᴀʏ ᗰᴜsɪᴄ Oɴ Tᴇʟᴇɢʀᴀᴍ ᐯᴏɪᴄᴇ ᑕʜᴀᴛ..** \n
-**☞ 📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- [𝗧𝗛𝗘_𝗕𝗟𝗔𝗭𝗘_𝗡𝗘𝗧𝗪𝗢𝗥𝗞](https://t.me/THE_BLAZE_NETWORK)** \n
+**☞ 📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- [𝐇𝐄𝐑𝐄](https://t.me/THE_BLAZE_NETWORK)** \n
 **☞ ✰ᖴᴏʀ ᗰᴏʀᴇ ᕼᴇʟᴘ ᑌsᴇ ᗷᴜᴛᴛᴏɴs ᗷᴇʟᴏᴡ ᗩɴᴅ ᗩʙᴏᴜᴛ ᗩʟʟ ᖴᴇᴀᴛᴜʀᴇ Oғ Tʜɪs ᗷᴏᴛ, ᒍᴜsᴛ Tʏᴘᴇ /help** 
 </b>""",
         reply_markup=InlineKeyboardMarkup(
@@ -166,7 +166,9 @@ async def get_uptime(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        "🤖 ᴢᴀɪᴅ ꜱᴛᴀᴛᴜꜱ:\n"
-        f"• **ᴜᴘᴛɪᴍᴇ:** `{uptime}`\n"
-        f"• **ꜱᴛᴀʀᴛ ᴛɪᴍᴇ:** `{START_TIME_ISO}`"
+        "🤖 『ᗷʟᴀᴢᴇ Տᴛᴀᴛᴜs』:\n"
+        f"•☞ **ᑌᴘᴛɪᴍᴇ:** `{uptime}`\n"
+        f"•☞ **Տᴛᴀʀᴛ Tɪᴍᴇ:** `{START_TIME_ISO}`\n\n"
+        f"•☞ **📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬** :- [𝐇𝐄𝐑𝐄](https://t.me/THE_BLAZE_NETWORK)"
+
     )
