@@ -62,11 +62,7 @@ async def start_(client: Client, message: Message):
                 ],[
                     InlineKeyboardButton(
                         "😁 ᴏꜰꜰɪᴄɪᴀʟ ᴢᴀɪᴅ ᴄʜᴀᴛ", url="https://t.me/Zaid_Team1")
-                ],[
-                    InlineKeyboardButton(
-                        "😉 ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ😍", url="https://github.com/Itsunknown-12/Zaid-Vc-Player"
-                    )
-                ]
+                ],
             ]
         ),
      disable_web_page_preview=True
