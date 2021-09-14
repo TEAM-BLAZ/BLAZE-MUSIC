@@ -414,17 +414,10 @@ async def cbguides(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""     **𝗛𝗢𝗪 𝗧𝗢 𝗨𝗦𝗘 𝗧𝗛𝗜𝗦 𝗕𝗢𝗧: ❓**
 
-【1】FIRST, ADD ME TO YOUR GROUP.
-
-【2】THEN PROMOTE ME AS ADMIN AND GIVE    
-          ALL PERMISSIONS EXCEPT ANONYMOUS    
-          ADMIN.
-
-【3】ADD @{ASSISTANT_NAME}  TO YOUR GROUP OR 
-          TYPE /userbotjoin TO INVITE HER.
-
-【4】 TURN ON THE VOICE CHAT FIRST 
-          BEFORE START TO PLAY MUSIC.** \n\n
+1⃣... First, Add Me To Your Group.
+2⃣... Then Promote Me As Admin And Give All Permissions Except Anonymous Admin.
+3⃣... Add @{ASSISTANT_NAME} To Your Group Or Type  /userbotjoin To Invite Her.
+4⃣... Turn On The Voice Chat First Before Start To Play Music.** \n\n
 **📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- 『ᗷʟᴀᴢᴇ ᑎᴇᴛᴡᴏʀᴋ』**""",
         reply_markup=InlineKeyboardMarkup(
             [
