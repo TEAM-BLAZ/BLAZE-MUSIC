@@ -43,7 +43,7 @@ async def start_(client: Client, message: Message):
             [ 
                 [
                     InlineKeyboardButton(
-                        "** ➕ α∂∂ мε тσ үσυя gяσυρ➕ **", url=f"https://t.me/BLAZEMUSIC_BOT?startgroup=true")
+                        "** ➕ꪖᦔᦔ ꪑꫀ 𝓽ꪮ ꪗꪮꪊ𝘳 ᧁ𝘳ꪮꪊρ➕ **", url=f"https://t.me/BLAZEMUSIC_BOT?startgroup=true")
                 ],[
                     InlineKeyboardButton(
                         "** нσω тσ υsε мε🎧** ", callback_data="cbhowtouse")
@@ -52,16 +52,16 @@ async def start_(client: Client, message: Message):
                          "** cм∂s🕹 **", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "** мα∂ε вү 🕵 **", url=f"https://t.me/Timesisnotwaiting")
+                        "** Mα∂ε Bү 🕵 **", url=f"https://t.me/Timesisnotwaiting")
                 ],[
                     InlineKeyboardButton(
-                        "** sυρρσят gяσυρ📣 **", url=f"https://t.me/Blaze_Support"
+                        "** Sυρρσят Gяσυρ📣 **", url=f"https://t.me/Blaze_Support"
                     ),
                     InlineKeyboardButton(
-                        "** σғғιcιαℓ cнαηηεℓ📢 **", url=f"https://t.me/THE_BLAZE_NETWORK")
+                        "** Oғғιcιαℓ Cнαηηεℓ📢 **", url=f"https://t.me/THE_BLAZE_NETWORK")
                 ],[
                     InlineKeyboardButton(
-                        "** sραм gяσυρ📡 **", url="https://t.me/BLAZE_SPAMMER")
+                        "** Sρꪖꪑ G𝘳ꪮꪊρ📡 **", url="https://t.me/BLAZE_SPAMMER")
                 ],
             ]
         ),
