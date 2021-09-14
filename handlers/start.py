@@ -43,25 +43,25 @@ async def start_(client: Client, message: Message):
             [ 
                 [
                     InlineKeyboardButton(
-                        "*➕Aᴅᴅ Mᴇ Tᴏ Yᴜʀ Gʀᴏᴜᴘ➕*", url=f"https://t.me/BLAZEMUSIC_BOT?startgroup=true")
+                        "**➕ α∂∂ мε тσ үσυя gяσυρ➕**", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "Hᴏᴡ Tᴏ Uꜱᴇ Mᴇ", callback_data="cbhowtouse")
+                        "**нσω тσ υsε мε🎧**", callback_data="cbhowtouse")
                 ],[
                     InlineKeyboardButton(
-                         "😄 ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbcmds"
+                         "**cм∂s🕹**", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "💝 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Timesisnotwaiting")
+                        "**мα∂ε вү 🕵**", url=f"https://t.me/Timesisnotwaiting")
                 ],[
                     InlineKeyboardButton(
-                        "👥 ᴏꜰꜰɪᴄɪᴀʟ ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Zaid_Support"
+                        "**sυρρσят gяσυρ📣**", url=f"https://t.me/Zaid_Support"
                     ),
                     InlineKeyboardButton(
-                        "🔥 ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Zaid_Updates")
+                        "**σғғιcιαℓ cнαηηεℓ📢**", url=f"https://t.me/Zaid_Updates")
                 ],[
                     InlineKeyboardButton(
-                        "😁 ᴏꜰꜰɪᴄɪᴀʟ ᴢᴀɪᴅ ᴄʜᴀᴛ", url="https://t.me/Zaid_Team1")
+                        "**sραм gяσυρ📡**", url="https://t.me/Zaid_Team1")
                 ],
             ]
         ),
@@ -80,10 +80,10 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨ ɢʀᴏᴜᴘ", url=f"https://t.me/Zaid_Support"
+                        "**ᧁ𝘳ꪮꪊρ👥**", url=f"https://t.me/Zaid_Support"
                     ),
                     InlineKeyboardButton(
-                        "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Zaid_Updates"
+                        "**ᥴꫝꪖꪀꪀꫀꪶ📣** ", url=f"https://t.me/Zaid_Updates"
                     )
                 ]
             ]
@@ -102,7 +102,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="❔ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴍᴇ", callback_data=f"cbguide"
+                        text="**нσω тσ υsε мε❓**", callback_data=f"cbguide"
                     )
                 ]
             ]
@@ -121,28 +121,28 @@ async def help_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "⚡ ʙᴀꜱɪᴄ ᴄᴍᴅꜱ", callback_data="cbbasic"
+                        "**вαsιc cм∂s☺**", callback_data="cbbasic"
                     ),
                     InlineKeyboardButton(
-                        "❣️ ᴀᴅᴠᴀɴᴄᴇᴅ ᴄᴍᴅꜱ", callback_data="cbadvanced"
+                        "**α∂vαηcε∂ cм∂s🤗", callback_data="cbadvanced"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "😏 ᴀᴅᴍɪɴ ᴄᴍᴅꜱ", callback_data="cbadmin"
+                        "**α∂∂мιηs cм∂s🔹🔹**", callback_data="cbadmin"
                     ),
                     InlineKeyboardButton(
-                        "⏲️ ꜱᴜᴅᴏ ᴄᴍᴅꜱ", callback_data="cbsudo"
+                        "**sυ∂σ cм∂s✒**", callback_data="cbsudo"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🙂 ᴏᴡɴᴇʀ ᴄᴍᴅꜱ", callback_data="cbowner"
+                        "**ꪮ᭙ꪀꫀ𝘳 ᥴꪑᦔ𝘴📁**", callback_data="cbowner"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "😍 ꜰᴜɴ ᴄᴍᴅꜱ", callback_data="cbfun"
+                        "**ᠻꪊꪀ ᥴꪑᦔ𝘴 🎗**", callback_data="cbfun"
                     )
                 ]
             ]
@@ -153,11 +153,11 @@ async def help_(client: Client, message: Message):
 @Client.on_message(command(["ping", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
     start = time()
-    m_reply = await message.reply_text("ᴢ ᴘɪɴɴɢ...")
+    m_reply = await message.reply_text("........")
     delta_ping = time() - start
     await m_reply.edit_text(
-        "𝚣 `ᴘᴏɴɢ!!`\n"
-        f"🇿  `{delta_ping * 1000:.3f} ᴍꜱ`"
+        "╰•★★  ℘ơŋɠ ★★•╯"
+        f"⚔️【★᥇ꪶꪖɀꫀ ★】 ꪑꪊ𝘴𝓲ᥴ★➤➤♛ \n\n╰★╯Ɽꪊ𝘬ꪮ 𝓳ꪖ𝘳ꪖ 𝘴ꪖ᥇ꪖ𝘳 𝘬ꪖ𝘳ꪮ...╰★╯\  `{delta_ping * 1000:.3f} ꪑ𝘴`"
     )
 
 
