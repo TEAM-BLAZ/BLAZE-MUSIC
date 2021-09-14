@@ -50,7 +50,7 @@ async def start_(client: Client, message: Message):
                          " ☞ ᑕᴍᴅs 🕹 ", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        " ☞ Oᴡɴᴇʀ 🕵 ", url=f"https://t.me/Timesisnotwaiting")
+                        " ☞ Oᴡɴᴇʀ 🕵 ", url=f"https://t.me/BLAZE_MUSIC")
                 ],[
                     InlineKeyboardButton(
                         " ☞ Տᴜᴘᴘᴏʀᴛ ᘜʀᴏᴜᴘ 📣 ", url=f"https://t.me/Blaze_Support"
