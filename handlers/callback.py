@@ -417,7 +417,8 @@ async def cbguides(_, query: CallbackQuery):
 1⃣... First, Add Me To Your Group.
 2⃣... Then Promote Me As Admin And Give All Permissions Except Anonymous Admin.
 3⃣... Add @{ASSISTANT_NAME} To Your Group Or Type  /userbotjoin To Invite Her.
-4⃣... Turn On The Voice Chat First Before Start To Play Music.** \n\n
+4⃣... Turn On The Voice Chat First Before Start To Play Music.** \n
+
 **📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- 『ᗷʟᴀᴢᴇ ᑎᴇᴛᴡᴏʀᴋ』**""",
         reply_markup=InlineKeyboardMarkup(
             [
