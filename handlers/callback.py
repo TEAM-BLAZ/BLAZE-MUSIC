@@ -412,19 +412,25 @@ async def cbdelcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbhowtouse"))
 async def cbguides(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""❓ HOW TO USE THIS BOT:
+        f"""**𝗛𝗢𝗪 𝗧𝗢 𝗨𝗦𝗘 𝗧𝗛𝗜𝗦 𝗕𝗢𝗧: ❓**
 
-1.) first, add me to your group.
-2.) then promote me as admin and give all permissions except anonymous admin.
-3.) add @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her.
-4.) turn on the voice chat first before start to play music.
+**【1】FIRST, ADD ME TO YOUR GROUP.
 
-⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ__""",
+【2】THEN PROMOTE ME AS ADMIN AND GIVE    
+         ALL PERMISSIONS EXCEPT ANONYMOUS    
+         ADMIN.
+
+【3】ADD  @{ASSISTANT_NAME}  TO YOUR GROUP OR 
+         TYPE /userbotjoin TO INVITE HER.
+
+【4】 TURN ON THE VOICE CHAT FIRST 
+         BEFORE START TO PLAY MUSIC.** \n\n
+**📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- [ᗷʟᴀᴢᴇ](https://t.me/THE_BLAZE_NETWORK)**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 ᴢ ʙᴀᴄᴋ", callback_data="cbstart"
+                        "☜ ᗷᴀᴄᴋ", callback_data="cbstart"
                     )
                 ]
             ]
