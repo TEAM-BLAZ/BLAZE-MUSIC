@@ -408,51 +408,6 @@ async def cbdelcmds(_, query: CallbackQuery):
     )
 
 
-@Client.on_callback_query(filters.regex("cbcmds"))
-async def cbhelps(_, query: CallbackQuery):
-    await query.edit_message_text(
-        f"""<b>💡 Hello there, welcome to the help menu !</b>
-
-**in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
-
-⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ__""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "📚 ʙᴀꜱɪᴄ ᴄᴍᴅꜱ", callback_data="cbbasic"
-                    ),
-                    InlineKeyboardButton(
-                        "📕 ᴀᴅᴠᴀᴄᴇᴅ ᴄᴍᴅꜱ", callback_data="cbadvanced"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "📘 ᴀᴅᴍɪɴ ᴄᴍᴅꜱ", callback_data="cbadmin"
-                    ),
-                    InlineKeyboardButton(
-                        "📗 ꜱᴜᴅᴏ ᴄᴍᴅꜱ", callback_data="cbsudo"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "📙 ᴏᴡɴᴇʀ ᴄᴍᴅꜱ", callback_data="cbowner"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "📔 ꜰᴜɴ ᴄᴍᴅꜱ", callback_data="cbfun"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🏡 ᴢ ʙᴀᴄᴋ", callback_data="cbstart"
-                    )
-                ]
-            ]
-        )
-    )
-
 
 @Client.on_callback_query(filters.regex("cbhowtouse"))
 async def cbguides(_, query: CallbackQuery):
