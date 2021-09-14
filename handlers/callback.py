@@ -76,12 +76,7 @@ async def cbhelp(_, query: CallbackQuery):
                     InlineKeyboardButton(
                         "🔥 ᴏᴡɴᴇʀ ᴄᴍᴅꜱ", callback_data="cbowner"
                     )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "✌ ꜰᴜɴ ᴄᴍᴅꜱ", callback_data="cbfun"
-                    )
-                ],
+                ],              
                 [
                     InlineKeyboardButton(
                         "🏡ᴢ ʙᴀᴄᴋ", callback_data="cbguide"
@@ -266,24 +261,24 @@ async def cbfun(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbguide"))
 async def cbguide(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""❓ HOW TO USE THIS BOT:
+        f"""     **𝗛𝗢𝗪 𝗧𝗢 𝗨𝗦𝗘 𝗧𝗛𝗜𝗦 𝗕𝗢𝗧: ❓**
 
-1.) **first, add me to your group**.
-2.) **then promote me as admin and give all permissions except anonymous admin**.
-3.) **add @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her**.
-4.) **turn on the voice chat first before start to play music**.
+1⃣... First, Add Me To Your Group.
+2⃣... Then Promote Me As Admin And Give All Permissions Except Anonymous Admin.
+3⃣... Add @{ASSISTANT_NAME} To Your Group Or Type  /userbotjoin To Invite Her.
+4⃣... Turn On The Voice Chat First Before Start To Play Music.** \n
 
-⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ__""",
+**📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- 『ᗷʟᴀᴢᴇ ᑎᴇᴛᴡᴏʀᴋ』**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "📚 ᴄᴏᴍᴍᴀɴᴅꜱ ʟɪꜱᴛ", callback_data="cbhelp"
+                        "ᑕᴍᴅꜱ ᒪɪꜱᴛ⚙️", callback_data="cbhelp"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗑 ᴄʟᴏꜱᴇ", callback_data="close"
+                        "ᑕʟᴏꜱᴇ🗑️", callback_data="close"
                     )
                 ]
             ]
