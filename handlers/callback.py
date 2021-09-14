@@ -10,7 +10,7 @@ from handlers.play import cb_admin_check
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>☞.**✰ᗯᴇʟᴄᴏᴍᴇ {message.from_user.first_name}** \n
+        f"""<b>☞.**✰ᗯᴇʟᴄᴏᴍᴇ {query.message.from_user.mention}** \n
 **☞ ✰I'ᴍ ᑭʟᴀʏ ᗰᴜsɪᴄ Oɴ Tᴇʟᴇɢʀᴀᴍ ᐯᴏɪᴄᴇ ᑕʜᴀᴛ..** \n
 **☞ 📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- [𝗧𝗛𝗘_𝗕𝗟𝗔𝗭𝗘_𝗡𝗘𝗧𝗪𝗢𝗥𝗞](https://t.me/THE_BLAZE_NETWORK)** \n
 **☞ ✰ᖴᴏʀ ᗰᴏʀᴇ ᕼᴇʟᴘ ᑌsᴇ ᗷᴜᴛᴛᴏɴs ᗷᴇʟᴏᴡ ᗩɴᴅ ᗩʙᴏᴜᴛ ᗩʟʟ ᖴᴇᴀᴛᴜʀᴇ Oғ Tʜɪs ᗷᴏᴛ, ᒍᴜsᴛ Tʏᴘᴇ /help** 
@@ -412,20 +412,20 @@ async def cbdelcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbhowtouse"))
 async def cbguides(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""**𝗛𝗢𝗪 𝗧𝗢 𝗨𝗦𝗘 𝗧𝗛𝗜𝗦 𝗕𝗢𝗧: ❓**
+        f"""     **𝗛𝗢𝗪 𝗧𝗢 𝗨𝗦𝗘 𝗧𝗛𝗜𝗦 𝗕𝗢𝗧: ❓**
 
-**【1】FIRST, ADD ME TO YOUR GROUP.
+【1】FIRST, ADD ME TO YOUR GROUP.
 
 【2】THEN PROMOTE ME AS ADMIN AND GIVE    
-         ALL PERMISSIONS EXCEPT ANONYMOUS    
-         ADMIN.
+          ALL PERMISSIONS EXCEPT ANONYMOUS    
+          ADMIN.
 
-【3】ADD  @{ASSISTANT_NAME}  TO YOUR GROUP OR 
-         TYPE /userbotjoin TO INVITE HER.
+【3】ADD @{ASSISTANT_NAME}  TO YOUR GROUP OR 
+          TYPE /userbotjoin TO INVITE HER.
 
 【4】 TURN ON THE VOICE CHAT FIRST 
-         BEFORE START TO PLAY MUSIC.** \n\n
-**📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- [ᗷʟᴀᴢᴇ](https://t.me/THE_BLAZE_NETWORK)**""",
+          BEFORE START TO PLAY MUSIC.** \n\n
+**📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :- 『ᗷʟᴀᴢᴇ ᑎᴇᴛᴡᴏʀᴋ』**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
