@@ -58,28 +58,28 @@ async def cbhelp(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "💤 ʙᴀꜱɪᴄ ᴄᴍᴅꜱ", callback_data="cbbasic"
+                        "•☞ᗷᴀsɪᴄ ᑕᴍᴅꜱ", callback_data="cbbasic"
                     ),
                     InlineKeyboardButton(
-                        "👀 ᴀᴅᴠᴀᴄᴇᴅ ᴄᴍᴅꜱ", callback_data="cbadvanced"
+                        "•☞ᗩᴅᴠᴀɴᴄᴇᴅ ᑕᴍᴅꜱ", callback_data="cbadvanced"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "💢 ᴀᴅᴍɪɴ ᴄᴍᴅꜱ", callback_data="cbadmin"
+                        "•☞ᗩᴅᴍɪɴ ᑕᴍᴅꜱ", callback_data="cbadmin"
                     ),
                     InlineKeyboardButton(
-                        "💥 ꜱᴜᴅᴏ ᴡᴀʟᴇ ᴋ ʟɪᴇ", callback_data="cbsudo"
+                        "•☞Տᴜᴅᴏ ᑕᴍᴅs", callback_data="cbsudo"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔥 ᴏᴡɴᴇʀ ᴄᴍᴅꜱ", callback_data="cbowner"
+                        "•☞Oᴡɴᴇʀ ᑕᴍᴅꜱ", callback_data="cbowner"
                     )
                 ],              
                 [
                     InlineKeyboardButton(
-                        "🏡ᴢ ʙᴀᴄᴋ", callback_data="cbguide"
+                        " ᗷᴀᴄᴋ", callback_data="cbguide"
                     )
                 ]
             ]
