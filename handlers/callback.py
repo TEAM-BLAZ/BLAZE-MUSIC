@@ -25,7 +25,7 @@ async def cbstart(_, query: CallbackQuery):
                         "☞ ᕼᴏᴡ Tᴏ ᑌsᴇ ᗰᴇ 🎧", callback_data="cbhowtouse")
                 ],[
                     InlineKeyboardButton(
-                         " ☞ ᑕᴍᴅs 🕹 ", callback_data="cbcmds"
+                         " ☞ ᑕᴍᴅs 🕹 ", url=f"https://telegra.ph/%E1%97%B7%CA%9F%E1%B4%80%E1%B4%A2%E1%B4%87-%E1%97%B0%E1%B4%9Cs%C9%AA%E1%B4%84-%E1%97%B7%E1%B4%8F%E1%B4%9B-09-14-2"
                     ),
                     InlineKeyboardButton(
                         " ☞ Oᴡɴᴇʀ 🕵 ", url=f"https://t.me/BLAZE_OWNER")
