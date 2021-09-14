@@ -43,10 +43,10 @@ async def start_(client: Client, message: Message):
             [ 
                 [
                     InlineKeyboardButton(
-                        "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜʀ ᴄʜᴀᴛꜱ 😄", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "*➕Aᴅᴅ Mᴇ Tᴏ Yᴜʀ Gʀᴏᴜᴘ➕*", url=f"https://t.me/BLAZEMUSIC_BOT?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "😢 ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴍᴇ", callback_data="cbhowtouse")
+                        "Hᴏᴡ Tᴏ Uꜱᴇ Mᴇ", callback_data="cbhowtouse")
                 ],[
                     InlineKeyboardButton(
                          "😄 ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbcmds"
