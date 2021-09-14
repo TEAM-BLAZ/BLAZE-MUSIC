@@ -41,25 +41,25 @@ async def start_(client: Client, message: Message):
             [ 
                 [
                     InlineKeyboardButton(
-                        " ➕ ꪖᦔᦔ ꪑꫀ 𝓽ꪮ ꪗꪮꪊ𝘳 ᧁ𝘳ꪮꪊρ ➕ ", url=f"https://t.me/BLAZEMUSIC_BOT?startgroup=true")
+                        " ➕ ᗩᴅᴅ ᗰᴇ Tᴏ Yᴏᴜʀ ᘜʀᴏᴜᴘ ➕ ", url=f"https://t.me/BLAZEMUSIC_BOT?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "ꫝꪮ᭙ 𝓽ꪮ ꪊ𝘴ꫀ ꪑꫀ 🎧", callback_data="cbhowtouse")
+                        "☞ ᕼᴏᴡ Tᴏ ᑌsᴇ ᗰᴇ 🎧", callback_data="cbhowtouse")
                 ],[
                     InlineKeyboardButton(
-                         " ᥴꪑᦔ𝘴 🕹 ", callback_data="cbcmds"
+                         " ☞ ᑕᴍᴅs 🕹 ", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        " ꪮ᭙ꪀꫀ𝘳 🕵 ", url=f"https://t.me/Timesisnotwaiting")
+                        " ☞ Oᴡɴᴇʀ 🕵 ", url=f"https://t.me/Timesisnotwaiting")
                 ],[
                     InlineKeyboardButton(
-                        " 𝘴ꪊρρꪮ𝘳𝓽 ᧁ𝘳ꪮꪊρ 📣 ", url=f"https://t.me/Blaze_Support"
+                        " ☞ Տᴜᴘᴘᴏʀᴛ ᘜʀᴏᴜᴘ 📣 ", url=f"https://t.me/Blaze_Support"
                     ),
                     InlineKeyboardButton(
-                        " ꪮᠻᠻ𝓲ᥴ𝓲ꪖꪶ ᥴꫝꪖꪀꪀꫀꪶ 📢 ", url=f"https://t.me/THE_BLAZE_NETWORK")
+                        " ☞ Oғғɪᴄɪᴀʟ ᑕʜᴀɴɴᴇʟ 📢 ", url=f"https://t.me/THE_BLAZE_NETWORK")
                 ],[
                     InlineKeyboardButton(
-                        " Sρꪖꪑ G𝘳ꪮꪊρ 📡 ", url="https://t.me/BLAZE_SPAMMER")
+                        " ☞ Տᴘᴀᴍ ᘜʀᴏᴜᴘ 📡 ", url="https://t.me/BLAZE_SPAMMER")
                 ],
             ]
         ),
@@ -78,10 +78,10 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        " ᧁ𝘳ꪮꪊρ 👥 ", url=f"https://t.me/Blaze_Support"
+                        " ☞ ᘜʀᴏᴜᴘ 👥 ", url=f"https://t.me/Blaze_Support"
                     ),
                     InlineKeyboardButton(
-                        " ᥴꫝꪖꪀꪀꫀꪶ 📣  ", url=f"https://t.me/THE_BLAZE_NETWORK"
+                        " ☞ ᑕʜᴀɴɴᴇʟ 📣  ", url=f"https://t.me/THE_BLAZE_NETWORK"
                     )
                 ]
             ]
@@ -100,7 +100,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text=" ꫝꪮ᭙ 𝓽ꪮ ꪊ𝘴ꫀ ꪑꫀ ❓ ", callback_data=f"cbguide"
+                        text=" ☞ ᕼᴏᴡ Tᴏ ᑌsᴇ ᗰᴇ❓ ", callback_data=f"cbguide"
                     )
                 ]
             ]
