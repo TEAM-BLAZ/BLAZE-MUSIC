@@ -43,25 +43,25 @@ async def start_(client: Client, message: Message):
             [ 
                 [
                     InlineKeyboardButton(
-                        "**➕ α∂∂ мε тσ үσυя gяσυρ➕**", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "** ➕ α∂∂ мε тσ үσυя gяσυρ➕ **", url=f"https://t.me/BLAZEMUSIC_BOT?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "**нσω тσ υsε мε🎧**", callback_data="cbhowtouse")
+                        "** нσω тσ υsε мε🎧** ", callback_data="cbhowtouse")
                 ],[
                     InlineKeyboardButton(
-                         "**cм∂s🕹**", callback_data="cbcmds"
+                         "** cм∂s🕹 **", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "**мα∂ε вү 🕵**", url=f"https://t.me/Timesisnotwaiting")
+                        "** мα∂ε вү 🕵 **", url=f"https://t.me/Timesisnotwaiting")
                 ],[
                     InlineKeyboardButton(
-                        "**sυρρσят gяσυρ📣**", url=f"https://t.me/Zaid_Support"
+                        "** sυρρσят gяσυρ📣 **", url=f"https://t.me/Blaze_Support"
                     ),
                     InlineKeyboardButton(
-                        "**σғғιcιαℓ cнαηηεℓ📢**", url=f"https://t.me/Zaid_Updates")
+                        "** σғғιcιαℓ cнαηηεℓ📢 **", url=f"https://t.me/THE_BLAZE_NETWORK")
                 ],[
                     InlineKeyboardButton(
-                        "**sραм gяσυρ📡**", url="https://t.me/Zaid_Team1")
+                        "** sραм gяσυρ📡 **", url="https://t.me/BLAZE_SPAMMER")
                 ],
             ]
         ),
@@ -80,10 +80,10 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "**ᧁ𝘳ꪮꪊρ👥**", url=f"https://t.me/Zaid_Support"
+                        "** ᧁ𝘳ꪮꪊρ👥 **", url=f"https://t.me/Blaze_Support"
                     ),
                     InlineKeyboardButton(
-                        "**ᥴꫝꪖꪀꪀꫀꪶ📣** ", url=f"https://t.me/Zaid_Updates"
+                        "** ᥴꫝꪖꪀꪀꫀꪶ📣 ** ", url=f"https://t.me/THE_BLAZE_NETWORK"
                     )
                 ]
             ]
@@ -102,7 +102,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="**нσω тσ υsε мε❓**", callback_data=f"cbguide"
+                        text="** нσω тσ υsε мε❓ **", callback_data=f"cbguide"
                     )
                 ]
             ]
@@ -121,28 +121,28 @@ async def help_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "**вαsιc cм∂s☺**", callback_data="cbbasic"
+                        "** вαsιc cм∂s☺ **", callback_data="cbbasic"
                     ),
                     InlineKeyboardButton(
-                        "**α∂vαηcε∂ cм∂s🤗", callback_data="cbadvanced"
+                        "** α∂vαηcε∂ cм∂s🤗 **", callback_data="cbadvanced"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "**α∂∂мιηs cм∂s🔹🔹**", callback_data="cbadmin"
+                        "** α∂∂мιηs cм∂s🔹🔹 **", callback_data="cbadmin"
                     ),
                     InlineKeyboardButton(
-                        "**sυ∂σ cм∂s✒**", callback_data="cbsudo"
+                        "** sυ∂σ cм∂s✒ **", callback_data="cbsudo"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "**ꪮ᭙ꪀꫀ𝘳 ᥴꪑᦔ𝘴📁**", callback_data="cbowner"
+                        "** ꪮ᭙ꪀꫀ𝘳 ᥴꪑᦔ𝘴📁 **", callback_data="cbowner"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "**ᠻꪊꪀ ᥴꪑᦔ𝘴 🎗**", callback_data="cbfun"
+                        "** ᠻꪊꪀ ᥴꪑᦔ𝘴 🎗 **", callback_data="cbfun"
                     )
                 ]
             ]
