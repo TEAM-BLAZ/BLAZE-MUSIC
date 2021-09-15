@@ -49,7 +49,7 @@ async def cbstart(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbhelp"))
 async def cbhelp(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>**✯🎼 Hello {message.from_user.mention}** </b>
+        f"""<b>**✯🎼 Hello, Welcome To The Help Menu's... 🤗** </b>
 **In This Menu All Commands Of This Bot Are Available Here..**
 **POWERED BY•☞ ⏤͟͟͞➖⃟💫🇧ʟᴀᴢᴇ ✘🇲ᴜsɪᴄ ‌‌ﮩ٨ـﮩﮩ٨ـ**""",
         reply_markup=InlineKeyboardMarkup(
