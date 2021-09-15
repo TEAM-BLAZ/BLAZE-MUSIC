@@ -77,7 +77,7 @@ async def cbhelp(_, query: CallbackQuery):
                 ],              
                 [
                     InlineKeyboardButton(
-                        " ☜• ᗷᴀᴄᴋ😉", callback_data="cbguide"
+                        " ☜• ᗷᴀᴄᴋ😉", callback_data="cbstart"
                     )
                 ]
             ]
