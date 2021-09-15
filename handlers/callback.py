@@ -49,11 +49,9 @@ async def cbstart(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbhelp"))
 async def cbhelp(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>💡 Hello there, welcome to the help menu Powered by @Zaid_Updates !</b>
-
-**in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
-
-⚡ __Powered by {BOT_NAME} A.I__""",
+        f"""<b>**✯🎼 Hello {message.from_user.mention}** </b>
+**In This Menu All Commands Of This Bot Are Available Here..**
+**POWERED BY•☞ ⏤͟͟͞➖⃟💫🇧ʟᴀᴢᴇ ✘🇲ᴜsɪᴄ ‌‌ﮩ٨ـﮩﮩ٨ـ**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
