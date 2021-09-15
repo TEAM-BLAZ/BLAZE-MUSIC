@@ -88,9 +88,9 @@ async def cbhelp(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the basic commands</b>
+        f"""**『𝗕𝗔𝗦𝗜𝗖 𝗖𝗠𝗗𝗦』**
 
-🎧 [ ᴢᴀɪᴅ ɢʀᴘ ᴄᴍᴅꜱ ]
+🎧 [ 𝐁𝐋𝐀𝐙𝐄 𝐌𝐔𝐒𝐈𝐂 𝐆𝐑𝐎𝐔𝐏 𝐂𝐌𝐃𝐒 ]
 
 /play (song name) - play song from youtube
 /ytp (song name) - play song directly from youtube 
@@ -102,7 +102,7 @@ async def cbbasic(_, query: CallbackQuery):
 /lyric - (song name) lyrics scrapper
 /vk (song name) - download song from inline mode
 
-🎧 [ ᴢᴀɪᴅ ᴄʜᴀɴɴᴇʟꜱ ᴄᴍᴅꜱ ]
+🎧 [ 𝐁𝐋𝐀𝐙𝐄 𝐌𝐔𝐒𝐈𝐂 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐂𝐌𝐃𝐒 ]
 
 /cplay - stream music on channel voice chat
 /cplayer - show the song in streaming
@@ -113,7 +113,7 @@ async def cbbasic(_, query: CallbackQuery):
 /admincache - refresh the admin cache
 /ubjoinc - invite the assistant for join to your channel
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘  @THE_BLAZE_NETWORK""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -129,7 +129,7 @@ async def cbbasic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadvanced"))
 async def cbadvanced(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the advanced commands</b>
+        f"""<b>『𝗔𝗗𝗩𝗘𝗡𝗖𝗘𝗗 𝗖𝗠𝗗𝗦』</b>
 
 /start (in group) - see the bot alive status
 /reload - reload bot and refresh the admin list
@@ -137,7 +137,7 @@ async def cbadvanced(_, query: CallbackQuery):
 /ping - check the bot ping status
 /uptime - check the bot uptime status
 
-⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ__""",
+⚡ 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘  @THE_BLAZE_NETWORK""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -153,7 +153,7 @@ async def cbadvanced(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadmin"))
 async def cbadmin(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the admin commands</b>
+        f"""<b>『𝗔𝗗𝗠𝗜𝗡𝗦 𝗖𝗠𝗗𝗦』</b>
 
 /player - show the music playing status
 /pause - pause the music streaming
@@ -171,7 +171,7 @@ async def cbadmin(_, query: CallbackQuery):
 /m and /tm (mute / temporary mute) - mute permanently or temporarily muted user in group
 /um - to unmute user you're muted in group
 
-⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ__""",
+⚡ 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘  @THE_BLAZE_NETWORK""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -187,13 +187,13 @@ async def cbadmin(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbsudo"))
 async def cbsudo(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the sudo commands</b>
+        f"""<b>『𝗦𝗨𝗗𝗢 𝗖𝗠𝗗𝗦』</b>
 
 /userbotleaveall - order the assistant to leave from all group
 /gcast - send a broadcast message trought the assistant
 /stats - show the bot statistic
 
-⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ__""",
+⚡ 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘  @THE_BLAZE_NETWORK""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -209,7 +209,7 @@ async def cbsudo(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbowner"))
 async def cbowner(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the owner commands</b>
+        f"""<b>『𝗢𝗪𝗡𝗘𝗥 𝗖𝗠𝗗𝗦』</b>
 
 /stats - show the bot statistic
 /broadcast - send a broadcast message from bot
@@ -217,9 +217,8 @@ async def cbowner(_, query: CallbackQuery):
 /unblock (user id - reason) - unblock user you blocked for using your bot
 /blocklist - show you the list of user was blocked for using your bot
 
-📝 note: all commands owned by this bot can be executed by the owner of the bot without any exceptions.
 
-⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ__""",
+⚡ 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘  @THE_BLAZE_NETWORK""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -232,28 +231,6 @@ async def cbowner(_, query: CallbackQuery):
     )
 
 
-@Client.on_callback_query(filters.regex("cbfun"))
-async def cbfun(_, query: CallbackQuery):
-    await query.edit_message_text(
-        f"""<b>🏮 here is the fun commands</b>
-
-/chika - check it by yourself
-/wibu - check it by yourself
-/asupan - check it by yourself
-/truth - check it by yourself
-/dare - check it by yourself
-
-⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ__""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "☜• ᗷᴀᴄᴋ😉", callback_data="cbhelp"
-                    )
-                ]
-            ]
-        )
-    )
 
 
 @Client.on_callback_query(filters.regex("cbguide"))
@@ -358,7 +335,7 @@ and you can also set a time for the ban and mute penalties for members in your g
 
 📝 note: cmd /b, /tb and /ub is the function to banned/unbanned user from your group, whereas /m, /tm and /um are commands to mute/unmute user in your group.
 
-⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ__""",
+⚡ 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘  @THE_BLAZE_NETWORK""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -388,7 +365,7 @@ async def cbdelcmds(_, query: CallbackQuery):
  2️⃣ to turn off feature:
      » type `/delcmd off`
       
-⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ__""",
+⚡ 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘  @THE_BLAZE_NETWORK""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
