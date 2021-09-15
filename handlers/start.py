@@ -139,7 +139,7 @@ async def help_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        " ᠻꪊꪀ ᥴꪑᦔ𝘴 🎗 ", callback_data="cbfun"
+                        " ☜• ᗷᴀᴄᴋ😉", callback_data="cbstart"
                     )
                 ]
             ]
