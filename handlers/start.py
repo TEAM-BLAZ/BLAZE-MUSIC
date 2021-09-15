@@ -113,6 +113,8 @@ async def help_(client: Client, message: Message):
         f"""<b>**✯🎼 Hello {message.from_user.mention}** </b>
 
 **In This Menu All Commands Of This Bot Are Available Here..**
+
+
 **POWERED BY•☞ ⏤͟͟͞➖⃟💫🇧ʟᴀᴢᴇ ✘🇲ᴜsɪᴄ ‌‌ﮩ٨ـﮩﮩ٨ـ**""",
         reply_markup=InlineKeyboardMarkup(
             [
