@@ -118,23 +118,23 @@ async def help_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "ᗷꪖ𝘴𝓲ᥴ ᥴꪑᦔ𝘴 ☺ ", callback_data="cbbasic"
+                        "ᗷᴀꜱɪᴄ ᑕᴍᴅꜱ ☺ ", callback_data="cbbasic"
                     ),
                     InlineKeyboardButton(
-                        " ꪖᦔꪜꪖꪀᥴꫀᦔ ᥴꪑᦔ𝘴 🤗 ", callback_data="cbadvanced"
+                        " ᗩᴅᴠᴀɴᴄᴇᴅ ᑕᴍᴅꜱ 🤗 ", callback_data="cbadvanced"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        " ꪖᦔᦔꪑ𝓲ꪀ𝘴 ᥴꪑᦔ𝘴 🖱️", callback_data="cbadmin"
+                        " ᗩᴅᴍɪɴ ᑕᴍᴅꜱ 🖱️", callback_data="cbadmin"
                     ),
                     InlineKeyboardButton(
-                        " 𝘴ꪊᦔꪮ ᥴꪑᦔ𝘴 💡", callback_data="cbsudo"
+                        " Տᴜᴅᴏ ᑕᴍᴅꜱ 💡", callback_data="cbsudo"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        " ꪮ᭙ꪀꫀ𝘳 ᥴꪑᦔ𝘴📁 ", callback_data="cbowner"
+                        " Oᴡɴᴇʀ ᑕᴍᴅꜱ 📁 ", callback_data="cbowner"
                     )
                 ],
                 [
