@@ -93,9 +93,9 @@ async def help(client: Client, message: Message):
     await message.reply_text(
         f"""<b>👋🏻 **Hello** {message.from_user.mention()}</b>
 
-**Please press the button below to read the explanation and see the list of available commands powered By Zaid!**
+**Please Press The Button Below To Read The Explanation And See The List Of Available Commands Powered By:- BLAZE**
 
-⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ""",
+""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
