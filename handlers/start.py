@@ -110,10 +110,9 @@ async def help(client: Client, message: Message):
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
 async def help_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>💡 Hello {message.from_user.mention} welcome to the help menu !</b>
+        f"""<b>✯🎼 Hello {message.from_user.mention} </b>
 
-**in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
-
+**In This Menu All Commands Of This Bot Are Available Here..**
 ⚡ __Powered by {BOT_NAME} Zaid__""",
         reply_markup=InlineKeyboardMarkup(
             [
