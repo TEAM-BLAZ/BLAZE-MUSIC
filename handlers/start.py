@@ -78,8 +78,8 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        " •☞ ᘜʀᴏᴜᴘ 👥 ", url=f"https://t.me/Blaze_Support")
-                ],[
+                        " •☞ ᘜʀᴏᴜᴘ 👥 ", url=f"https://t.me/Blaze_Support"),
+                
                     InlineKeyboardButton(
                         " •☞ ᑕʜᴀɴɴᴇʟ 📣  ", url=f"https://t.me/THE_BLAZE_NETWORK"
                     )
@@ -110,10 +110,10 @@ async def help(client: Client, message: Message):
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
 async def help_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>✯🎼 Hello {message.from_user.mention} </b>
+        f"""<b>**✯🎼 Hello {message.from_user.mention}** </b>
 
 **In This Menu All Commands Of This Bot Are Available Here..**
-⚡ __Powered by {BOT_NAME} Zaid__""",
+**POWERED BY•☞ [⏤͟͟͞➖⃟💫🇧ʟᴀᴢᴇ ✘🇲ᴜsɪᴄ ‌‌ﮩ٨ـﮩﮩ٨ـ](https://t.me/THE_BLAZE_NETWORK)**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
