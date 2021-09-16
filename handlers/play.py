@@ -586,9 +586,9 @@ async def play(_, message: Message):
             useer=user_name
             emojilist = ["1","2","3","4","5"]
             while j < 5:
-                toxxt += f"{emojilist[j]} [{results[j]['title'][:30]}](https://youtube.com{results[j]['url_suffix']})\n"
+                toxxt += f"**{emojilist[j]} [{results[j]['title'][:30]}](https://youtube.com{results[j]['url_suffix']})\n**"
                 toxxt += f" ├ 💡 **ᗪᴜʀᴀᴛɪᴏɴ** - {results[j]['duration']}\n"
-                toxxt += f" └ ⚡ __📌ᑭᴏᴡᴇʀᴇᴅ ᗷʏ:-#𝗧𝗛𝗘_𝗕𝗟𝗔𝗭𝗘_𝗡𝗘𝗧𝗪𝗢𝗥𝗞__ \n\n"
+                toxxt += f" └ ⚡ __**📌ᑭᴏᴡᴇʀᴇᴅ ᗷʏ:- THE BLAZE NETWORK** \n\n"
                 j += 1            
             keyboard = InlineKeyboardMarkup(
                 [
