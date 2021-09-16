@@ -115,15 +115,15 @@ async def playlist(client, message):
         return
     queue = que.get(message.chat.id)
     if not queue:
-        await message.reply_text("**nothing in streaming!**")
+        await message.reply_text("**🔄 KOI SONG NAHIN CHAL RAHA..🤭**")
     temp = []
     for t in queue:
         temp.append(t)
     now_playing = temp[0][0]
     by = temp[0][1].mention(style="md")
-    msg = "**Now playing** on {}".format(message.chat.title)
+    msg = "**NOW PLAYING** ON {}".format(message.chat.title)
     msg += "\n• "+ now_playing
-    msg += "\n• Requested By "+by
+    msg += "\n• REQUESTED BY "+by
     temp.pop(0)
     if temp:
         msg += "\n\n"
@@ -138,13 +138,13 @@ async def playlist(client, message):
 # ============================= Settings =========================================
 def updated_stats(chat, queue, vol=100):
     if chat.id in callsmusic.pytgcalls.active_calls:
-        stats = "ᴘʟᴀʏɪɴɢ ɪɴ ᴄʜᴀᴛ **{}**".format(chat.title)
+        stats = "ᑭʟᴀʏɪɴɢ Iɴ ᑕʜᴀᴛ **{}**".format(chat.title)
         if len(que) > 0:
             stats += "\n\n"
-            stats += "ᴠᴏʟᴜᴍᴇ: {}%\n".format(vol)
-            stats += "Qᴜᴇᴜᴇ ɴᴜᴍʙᴇʀ: `{}`\n".format(len(que))
-            stats += "ꜱᴏɴɢ ɴᴀᴍᴇ: **{}**\n".format(queue[0][0])
-            stats += "ᴢᴀɪᴅ ᴜꜱᴇʀ ʙʏ: {}".format(queue[0][1].mention)
+            stats += "ᐯᴏʟᴜᴍᴇ: {}%\n".format(vol)
+            stats += "ᑫᴜᴇᴜᴇ ᑎᴜᴍʙᴇʀ: `{}`\n".format(len(que))
+            stats += "Տᴏɴɢ ᑎᴀᴍᴇ: **{}**\n".format(queue[0][0])
+            stats += "ᴜꜱᴇʀ ʙʏ: {}".format(queue[0][1].mention)
     else:
         stats = None
     return stats
@@ -183,12 +183,12 @@ async def settings(client, message):
     stats = updated_stats(message.chat, queue)
     if stats:
         if playing:
-            await message.reply(stats, reply_markup=r_ply("pause"))
+            await message.reply(stats, reply_markup=r_ply("PAUSE"))
             
         else:
-            await message.reply(stats, reply_markup=r_ply("play"))
+            await message.reply(stats, reply_markup=r_ply("PLAY"))
     else:
-        await message.reply("**please turn on the voice chat first.**")
+        await message.reply("**PLEASE TURN ON THE VOICE CHAT FIRST.**")
 
 
 @Client.on_message(
@@ -211,22 +211,22 @@ async def hfmm(_, message):
     if status == "ON" or status == "on" or status == "On":
         lel = await message.reply("`processing...`")
         if not message.chat.id in DISABLED_GROUPS:
-            await lel.edit("**music player already activated.**")
+            await lel.edit("**MUSIC PLAYER ALREADY ACTIVATED.**")
             return
         DISABLED_GROUPS.remove(message.chat.id)
         await lel.edit(
-            f"✅ **music player has been activated in this chat.**\n\n💬 {message.chat.id}"
+            f"✅ ** MUSIC PLAYER HAS BEENn ACTIONvated INin THEis CHAT.**\n\n💬 {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await message.reply("`processing...`")
         
         if message.chat.id in DISABLED_GROUPS:
-            await lel.edit("**music player already deactivated.**")
+            await LEL.EDIT("**MUSIC PLAYER ALREADY DEACTIVATED.**")
             return
         DISABLED_GROUPS.append(message.chat.id)
         await lel.edit(
-            f"✅ **music player has been deactivated in this chat.**\n\n💬 {message.chat.id}"
+            f"✅ **MUSIC PLAYER HAS BEEN DEACTIVATED IN THIS CHAT.**\n\n💬 {message.chat.id}"
         )
     else:
         await message.reply_text(
@@ -319,7 +319,7 @@ async def m_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style="md")
-        msg = "**Zaid Started** Mm {}".format(cb.message.chat.title)
+        msg = "** STARTED** Mm {}".format(cb.message.chat.title)
         msg += "\n• "+ now_playing
         msg += "\n• Atas permintaan "+by
         temp.pop(0)
@@ -366,18 +366,18 @@ async def m_cb(b, cb):
         marr = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⏹", "leave"),
-                    InlineKeyboardButton("⏸", "puse"),
-                    InlineKeyboardButton("▶️", "resume"),
-                    InlineKeyboardButton("⏭", "skip")
+                    InlineKeyboardButton("⏹", "ᒪeave"),
+                    InlineKeyboardButton("⏸", "ᑭuse"),
+                    InlineKeyboardButton("▶️", "ᖇesume"),
+                    InlineKeyboardButton("⏭", "Տkip")
                 
                 ],
                 [
-                    InlineKeyboardButton("📖 ᴘʟᴀʏʟɪꜱᴛ", "playlist"),
+                    InlineKeyboardButton("📖 ᑭʟᴀʏʟɪꜱᴛ", "playlist"),
                 
                 ],
                 [       
-                    InlineKeyboardButton("🗑 ᴄʟᴏꜱᴇ", "cls")
+                    InlineKeyboardButton("🗑 ᑕʟᴏꜱᴇ", "cls")
                 ]        
             ]
         )
@@ -402,7 +402,7 @@ async def m_cb(b, cb):
                 await cb.answer("skipped")
                 await cb.message.edit((m_chat, qeue), reply_markup=r_ply(the_data))
                 await cb.message.reply_text(
-                    f"⫸ ꜱᴋɪᴘᴘᴇᴅ ᴢ\n⫸ ɴᴏᴡ ᴘʟᴀʏɪɴɢ : **{qeue[0][0]}**"
+                    f"⫸ Տᴋɪᴘ \n⫸ ᑎᴏᴡ ᑭʟᴀʏɪɴɢ : **{qeue[0][0]}**"
                 )
 
     elif type_ == "leave":
@@ -413,7 +413,7 @@ async def m_cb(b, cb):
                 pass
 
             callsmusic.pytgcalls.leave_group_call(chet_id)
-            await cb.message.edit("⏹ **music stopped!**")
+            await cb.message.edit("⏹ **ᗰusic Տtopped!**")
         else:
             await cb.answer("assistant is not connected to voice chat!", show_alert=True)
 
@@ -586,9 +586,9 @@ async def play(_, message: Message):
             useer=user_name
             emojilist = ["1","2","3","4","5"]
             while j < 5:
-                toxxt += f"**{emojilist[j]} [{results[j]['title'][:30]}](https://youtube.com{results[j]['url_suffix']})\n**"
+                toxxt += f"{emojilist[j]} [{results[j]['title'][:30]}](https://youtube.com{results[j]['url_suffix']})\n"
                 toxxt += f" ├ 💡 **ᗪᴜʀᴀᴛɪᴏɴ** - {results[j]['duration']}\n"
-                toxxt += f" └ ⚡ __**📌ᑭᴏᴡᴇʀᴇᴅ ᗷʏ:- THE BLAZE NETWORK** \n\n"
+                toxxt += f" └ ⚡__**📌ᑭᴏᴡᴇʀᴇᴅ ᗷʏ:- THE BLAZE NETWORK** \n\n"
                 j += 1            
             keyboard = InlineKeyboardMarkup(
                 [
@@ -601,7 +601,7 @@ async def play(_, message: Message):
                         InlineKeyboardButton("4", callback_data=f'plll 3|{query}|{user_id}'),
                         InlineKeyboardButton("5", callback_data=f'plll 4|{query}|{user_id}'),
                     ],                   
-                    [InlineKeyboardButton(text="⏤͟͟͞⃟💫🇧ʟᴀᴢᴇ ᑕʟᴏꜱᴇ 🗑️", callback_data="cls")],
+                    [InlineKeyboardButton(text="⏤͟͟͞⃟💫🇧ʟᴀᴢᴇ👉ᑕʟᴏꜱᴇ 🗑️", callback_data="cls")],
                 ]
             )
             await message.reply_photo(
