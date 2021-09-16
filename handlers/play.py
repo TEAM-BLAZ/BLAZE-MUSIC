@@ -513,6 +513,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("🗑 ᑕʟᴏsᴇ", callback_data="cls"),
                 ],[
                     InlineKeyboardButton("📣 ᑕʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK")
+                    InlineKeyboardButton("✨ Ꮆʀᴏᴜᴘ", url=f"https://t.me/blaze_spammer")
                 ],
             ]
         )
@@ -560,6 +561,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("🗑 ᑕʟᴏsᴇ", callback_data="cls"),
                 ],[
                     InlineKeyboardButton("📣 ᑕʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK")
+                    InlineKeyboardButton("✨ Ꮆʀᴏᴜᴘ", url=f"https://t.me/blaze_spammer")
                 ],
             ]
         )
@@ -637,10 +639,11 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
+                    InlineKeyboardButton("🖱 ᗰᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("🗑 ᑕʟᴏsᴇ", callback_data="cls"),
                 ],[
-                    InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK")
+                    InlineKeyboardButton("📣 ᑕʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK")
+                    InlineKeyboardButton("✨ Ꮆʀᴏᴜᴘ", url=f"https://t.me/blaze_spammer")
                 ],
             ]
             )
@@ -736,12 +739,12 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
-                InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
-            ],[
-                InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK"),
-                InlineKeyboardButton("✨ ɢʀᴏᴜᴘ", url=f"https://t.me/blaze_spammer")
-            ],
+                    InlineKeyboardButton("🖱 ᗰᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("🗑 ᑕʟᴏsᴇ", callback_data="cls"),
+                ],[
+                    InlineKeyboardButton("📣 ᑕʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK")
+                    InlineKeyboardButton("✨ Ꮆʀᴏᴜᴘ", url=f"https://t.me/blaze_spammer")
+                ],
             ]
     )
     requested_by = useer_name
@@ -884,11 +887,11 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
-                InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
-            ],[
-                InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK"),
-                InlineKeyboardButton("✨ ɢʀᴏᴜᴘ", url=f"https://t.me/blaze_spammer")
+                    InlineKeyboardButton("🖱 ᗰᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("🗑 ᑕʟᴏsᴇ", callback_data="cls"),
+                ],[
+                    InlineKeyboardButton("📣 ᑕʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK")
+                    InlineKeyboardButton("✨ Ꮆʀᴏᴜᴘ", url=f"https://t.me/blaze_spammer")
             ],
         ]
     )
