@@ -519,7 +519,7 @@ async def play(_, message: Message):
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/218bed945588bab0c9355.jpg"
+        thumb_name = "https://telegra.ph/file/bff89f1aae45446703a4f.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -816,24 +816,24 @@ async def ytplay(_, message: Message):
             if administrator == message.from_user.id:
                 if message.chat.title.startswith("Channel Music: "):
                     await lel.edit(
-                        f"<b>please add {user.first_name} to your channel first</b>",
+                        f"<b>**Please Add {user.first_name} To Your Channel.**</b>",
                     )
                     pass
                 try:
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>❗ promote me as admin first for using me</b>",
+                        "<b>❗*ᗰᴀᴋᴇ ᗰᴇ ᗩᴅᴍɪɴ ᖴɪʀꜱᴛ.* </b>",
                     )
                     return
 
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "🤖: i'm joined to this group for playing music in voice chat"
+                        message.chat.id, "🤖: i'm joined to this group "
                     )
                     await lel.edit(
-                        "<b>💡 helper userbot succesfully joined your chat</b>",
+                        "<b>💡 ᗷʟᴀᴢᴇ ᕼᴇʟᴘ ᑌsᴇʀʙᴏᴛ ᒍᴏɪɴᴇᴅ ᑌʀ ᑕʜᴀᴛ..🤗🤭</b>",
                     )
 
                 except UserAlreadyParticipant:
@@ -841,18 +841,18 @@ async def ytplay(_, message: Message):
                 except Exception:
                     # print(e)
                     await lel.edit(
-                        f"<b>ꜰʟᴏᴏᴅ ᴡᴀɪᴛ ᴇʀʀᴏʀ\n{user.first_name} ᴢᴀɪᴅ ʜᴇʟᴘᴇʀ ɪꜱ ɴᴏᴛ ɪɴ ᴜʀ ᴄʜᴀᴛꜱ."
-                        f"\n\nᴛʀʏ ᴛᴏ @{ASSISTANT_NAME} ᴀᴅᴅ ᴍᴀɴᴜᴀʟʟʏ</b>",
+                        f"<b>Fʟᴏᴏᴅ Wᴀɪᴛ Eʀʀᴏʀ\n{user.first_name} Iꜱ Nᴏᴛ Iɴ Youʀ Cʜᴀᴛꜱ."
+                        f"\n\n Tʀʏ Tᴏ @{ASSISTANT_NAME} Aᴅᴅ </b>",
                     )
     try:
         await USER.get_chat(chid)
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>{user.first_name} was banned in this group, ask admin to unban @{ASSISTANT_NAME} manually.</i>"
+            f"<i>{user.first_name} was banned in this group, ask admin to unban @{ASSISTANT_NAME}....</i>"
         )
         return
-    await lel.edit("🔎 **finding song...**")
+    await lel.edit("🔎 **FINDING SONG...**")
     user_id = message.from_user.id
     user_name = message.from_user.first_name
      
@@ -861,7 +861,7 @@ async def ytplay(_, message: Message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    await lel.edit("🎵 **ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴛᴏ ᴢᴀɪᴅ ꜱᴇʀᴠᴇʀ...**")
+    await lel.edit("🎵 **Cᴏɴɴᴇᴄᴛɪɴɢ Tᴏ Bʟᴀᴢᴇ Sᴇʀᴠᴇʀ...**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -878,7 +878,7 @@ async def ytplay(_, message: Message):
 
     except Exception as e:
         await lel.edit(
-            "**❗ song not found,** please give a valid song name."
+            "**❗ SONG NOT FOUND,** PLEASE GIVE A VALID SONG NAME."
         )
         print(str(e))
         return
