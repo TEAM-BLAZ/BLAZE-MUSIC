@@ -271,43 +271,44 @@ async def close(_, query: CallbackQuery):
 @cb_admin_check
 async def cbback(_, query: CallbackQuery):
     await query.edit_message_text(
-        "**💡 here is the control menu of bot :**",
+        "**Oᴘᴇɴᴇᴅ ᗰᴜꜱɪᴄ ᑭʟᴀʏᴇʀ ᗰᴇɴᴜ!☢️☢️**\n\n**👉 ᑎɪᴄʜʜᴇ ᗪɪʏᴇ ᘜʏᴇ ᗷᴜᴛᴛᴏɴs Տᴇ ᗩᴀᴘ ᗰᴜsɪᴄ ᑕᴏɴᴛʀᴏʟ Kʀ Տᴋᴛᴇ ᕼᴀɪɴ..😉**",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "⏸ ᴘᴀᴜꜱᴇ", callback_data="cbpause"
+                        "⏸ ᑭᴀᴜꜱᴇ", callback_data="cbpause"
                     ),
                     InlineKeyboardButton(
-                        "▶️ ʀᴇꜱᴜᴍᴇ", callback_data="cbresume"
+                        "▶️ ᖇᴇꜱᴜᴍᴇ", callback_data="cbresume"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "⏩ ꜱᴋɪᴘ", callback_data="cbskip"
+                        "⏩ Տᴋɪᴘ", callback_data="cbskip"
                     ),
                     InlineKeyboardButton(
-                        "⏹ ᴇɴᴅ", callback_data="cbend"
+                        "⏹ ᗴɴᴅ", callback_data="cbend"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "⛔ ᴀɴᴛɪ ᴄᴍᴅ", callback_data="cbdelcmds"
+                        "⛔ ᗩɴᴛɪ ᑕᴍᴅꜱ", callback_data="cbdelcmds"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🛄 ɢʀᴘ ᴛᴏᴏʟꜱ", callback_data="cbgtools"
+                        "🧰ᘜʀᴘꜱ Tᴏᴏʟꜱ", callback_data="cbgtools"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗑 ᴄʟᴏꜱᴇ", callback_data="close"
+                        "🗑 ᑕʟᴏꜱᴇ", callback_data="close"
                     )
                 ]
             ]
         )
     )
+
 
 
 @Client.on_callback_query(filters.regex("cbgtools"))
