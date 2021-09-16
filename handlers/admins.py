@@ -42,7 +42,7 @@ async def update_admin(client, message):
     for u in new_ads:
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
-    await message.reply_text("😄 ʙᴏᴛ **ʀᴇʟᴏᴀᴅᴇᴅ ᴘᴏᴡᴇʀ ʙʏ ᴢᴀɪᴅ !**\n✅ **Admin list** has been **updated !**")
+    await message.reply_text("ᗷᴏᴛ **ᖇᴇʟᴏᴀᴅᴇ !🤩**\n\n😉**ᗩdmin ᒪist** has been **updated **")
 
 
 # Control Menu Of Player
@@ -51,38 +51,38 @@ async def update_admin(client, message):
 @authorized_users_only
 async def controlset(_, message: Message):
     await message.reply_text(
-        "**😗 ᴏᴘᴇɴᴇᴅ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ᴍᴇɴᴜ!**\n\n**💭 ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛʀᴏʟ ᴛʜᴇ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ᴊᴜꜱᴛ ʙʏ ᴘʀᴏᴄᴄᴇꜱꜱɪɴɢ ᴏɴᴇ ᴏꜰ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ**",
+        "**Oᴘᴇɴᴇᴅ ᗰᴜꜱɪᴄ ᑭʟᴀʏᴇʀ ᗰᴇɴᴜ!☢️☢️**\n\n**👉 ᑎɪᴄʜʜᴇ ᗪɪʏᴇ ᘜʏᴇ ᗷᴜᴛᴛᴏɴs Տᴇ ᗩᴀᴘ ᗰᴜsɪᴄ ᑕᴏɴᴛʀᴏʟ Kʀ Տᴋᴛᴇ ᕼᴀɪɴ..😉**",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "⏸ ᴘᴀᴜꜱᴇ", callback_data="cbpause"
+                        "⏸ ᑭᴀᴜꜱᴇ", callback_data="cbpause"
                     ),
                     InlineKeyboardButton(
-                        "▶️ ʀᴇꜱᴜᴍᴇ", callback_data="cbresume"
+                        "▶️ ᖇᴇꜱᴜᴍᴇ", callback_data="cbresume"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "⏩ ꜱᴋɪᴘ", callback_data="cbskip"
+                        "⏩ Տᴋɪᴘ", callback_data="cbskip"
                     ),
                     InlineKeyboardButton(
-                        "⏹ ᴇɴᴅ", callback_data="cbend"
+                        "⏹ ᗴɴᴅ", callback_data="cbend"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "⛔ ᴀɴᴛɪ ᴄᴍᴅꜱ", callback_data="cbdelcmds"
+                        "⛔ ᗩɴᴛɪ ᑕᴍᴅꜱ", callback_data="cbdelcmds"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "ɢʀᴘꜱ ᴛᴏᴏʟꜱ", callback_data="cbgtools"
+                        "🔰ᘜʀᴘꜱ Tᴏᴏʟꜱ", callback_data="cbgtools"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗑 ᴄʟᴏꜱᴇ", callback_data="close"
+                        "🗑 ᑕʟᴏꜱᴇ", callback_data="close"
                     )
                 ]
             ]
@@ -98,10 +98,10 @@ async def pause(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "paused"
     ):
-        await message.reply_text("❗ᴍ ᴋᴜᴄʜʜ ᴘʟᴀʏ ᴋᴀʀ ʀʜᴀ ʜᴜ?😒!")
+        await message.reply_text("I'ᴍ ᑭʟᴀʏɪɴɢ Տᴏɴɢ...?😶!")
     else:
         callsmusic.pytgcalls.pause_stream(chat_id)
-        await message.reply_text("▶️ ᴡᴛꜰ ᴘᴀᴜꜱᴇᴅ 😌!")
+        await message.reply_text("▶️ ᑭᴀᴜꜱᴇᴅ 😌!")
 
 
 @Client.on_message(command("resume") & other_filters)
@@ -112,10 +112,10 @@ async def resume(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "playing"
     ):
-        await message.reply_text("❗ᴋᴜᴄʜʜ ᴘᴀᴜꜱᴇᴅ ᴍ ᴛʜᴀ?")
+        await message.reply_text("❗ᗩɴʏᴛʜɪɴɢ ᑭᴀᴜꜱᴇᴅ ?")
     else:
         callsmusic.pytgcalls.resume_stream(chat_id)
-        await message.reply_text("⏸ ᴏᴍᴋ ʀᴇꜱᴜᴍᴇᴅ!")
+        await message.reply_text("⏸ ᖇᴇꜱᴜᴍᴇᴅ!")
 
 
 @Client.on_message(command("end") & other_filters)
@@ -124,7 +124,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ ʜᴇʜᴇ ᴍ ᴋᴜᴄʜʜ ᴘʟᴀʏ ʜɪ ɴ ᴋᴀʀ ʀʜᴀ😉!")
+        await message.reply_text(" Տᴀʙ ᗰᴏʜᴀ ᗰᴀʏᴀ ᕼᴀɪɴ..ᗰᴀɪɴ ᑎʜɪ ᑭʟᴀʏ Kʀᴜ ᘜᴀ 😉🤪")
     else:
         try:
             queues.clear(chat_id)
@@ -132,7 +132,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text("⏹ ᴇɴᴅᴇᴅ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴢᴀɪᴅ!")
+        await message.reply_text("⏹ ᗴɴᴅ ᗷʏ ᗷʟᴀᴢᴇ")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -142,7 +142,7 @@ async def skip(_, message: Message):
     global que
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ ɴᴏᴛʜɪɴɢ ɪꜱ ᴘʟᴀʏɪɴɢ!")
+        await message.reply_text("ᑎʜɪ ᑕʜᴀʟ ᖇʜᴀ 😫😭")
     else:
         queues.task_done(chat_id)
 
@@ -158,7 +158,7 @@ async def skip(_, message: Message):
         skip = qeue.pop(0)
     if not qeue:
         return
-    await message.reply_text(f"⫸ ꜱᴋɪᴘᴘᴇᴅ : **{skip[0]}**\n⫸ ɴᴏᴡ ᴘʟᴀʏɪɴɢ : **{qeue[0][0]}**")
+    await message.reply_text(f"⫸ Տᴋɪᴘ : **{skip[0]}**\n⫸ ᑎᴏᴡ ᑭʟᴀʏɪɴɢ...😒 : **{qeue[0][0]}**")
 
 
 @Client.on_message(command("auth") & other_filters)
@@ -166,15 +166,15 @@ async def skip(_, message: Message):
 async def authenticate(client, message):
     global admins
     if not message.reply_to_message:
-        await message.reply("❗ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ ᴛᴏ ᴀᴜᴛʜ!")
+        await message.reply(" ᖇᴇᴘʟʏ Tᴏ ᗩ ᑌꜱᴇʀ Tᴏ ᗩᴜᴛʜ!..🕯️🕯️")
         return
     if message.reply_to_message.from_user.id not in admins[message.chat.id]:
         new_admins = admins[message.chat.id]
         new_admins.append(message.reply_to_message.from_user.id)
         admins[message.chat.id] = new_admins
-        await message.reply("🟢 ᴏᴋᴀʏ ɴᴏᴡ ꜱᴏɴ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ.\n\nᴊᴀᴀ ᴍᴏᴊ ᴋᴀʀ, ʟɪᴋᴇ ᴀᴅᴍɪɴ ᴄᴍᴅꜱ 😁.")
+        await message.reply("🟢 ᑎᴏᴡ Տᴏᴏɴ ᗩᴜᴛʜᴏʀɪᴢᴇᴅ.\n\n ᑎɪᴋʟ ᗰᴏᴊ ᗰᴀʀ 🤭.")
     else:
-        await message.reply("✅ ᴏᴋᴀʏ ꜱᴏɴ ɪꜱ ɴᴏᴡ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ!")
+        await message.reply("✅ᑎᴏᴡ ᗩᴜᴛʜᴏʀɪᴢᴇᴅ..🤗🤗")
 
 
 @Client.on_message(command("deauth") & other_filters)
@@ -182,15 +182,15 @@ async def authenticate(client, message):
 async def deautenticate(client, message):
     global admins
     if not message.reply_to_message:
-        await message.reply("❗ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴏꜰ ᴛʜᴇ ᴜꜱᴇʀ!")
+        await message.reply("❗ ᖇᴇᴘʟʏ Tᴏ ᗩ ᗰᴇꜱꜱᴀɢᴇ Oꜰ Tʜᴇ ᑌꜱᴇʀ...😬")
         return
     if message.reply_to_message.from_user.id in admins[message.chat.id]:
         new_admins = admins[message.chat.id]
         new_admins.remove(message.reply_to_message.from_user.id)
         admins[message.chat.id] = new_admins
-        await message.reply("🔴 ᴡᴛꜰ ᴅᴇᴀᴜᴛʜᴏʀɪᴢᴇᴅ ꜱᴜᴄᴄᴇꜱꜱ.\n\nʜᴇʜᴇ ɴᴏᴡ ᴛʜɪꜱ ɴɪʙʙᴀ ᴄᴀɴᴛ ᴜꜱᴇ ᴍɪɴᴇ ꜰᴇᴀᴛᴜʀᴇꜱ.")
+        await message.reply("ᗪᴇᴀᴜᴛʜᴏʀɪᴢᴇᴅ Տᴜᴄᴄᴇꜱꜱ...🤮")
     else:
-        await message.reply("✅ ʜᴀʜᴀ ᴀᴀ ɢʏᴀ ᴊᴀᴍᴇᴇɴ ᴘᴇ!")
+        await message.reply("ᗰᴏᴊ ᕼᴏɢɪ Tᴇʀɪ TO...🤣🤣🤣 #ᑎɪᴋᴀʟ 🤣")
 
 
 # this is a anti cmd feature
@@ -198,26 +198,26 @@ async def deautenticate(client, message):
 @authorized_users_only
 async def delcmdc(_, message: Message):
     if len(message.command) != 2:
-        await message.reply_text("ʀᴇᴀᴅ /help ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅꜱ")
+        await message.reply_text("ᖇᴇᴀᴅ /help ᗰᴇꜱꜱᴀɢᴇ Tᴏ Kɴᴏᴡ ᕼᴏᴡ Tᴏ ᑌꜱᴇ Tʜɪꜱ ᑕᴍᴅꜱ😗")
         return
     status = message.text.split(None, 1)[1].strip()
     status = status.lower()
     chat_id = message.chat.id
     if status == "on":
         if await delcmd_is_on(message.chat.id):
-            await message.reply_text("✅ ᴀʟʀᴇᴀᴅʏ ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+            await message.reply_text("✅ ᗩʟʀᴇᴀᴅʏ ᗩᴄᴛɪᴠᴀᴛᴇᴅ")
             return
         else:
             await delcmd_on(chat_id)
             await message.reply_text(
-                "🟢 ᴀᴄᴛɪᴠᴀᴛᴇᴅ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴢᴀɪᴅ"
+                "🟢 ᗩᴄᴛɪᴠᴀᴛᴇᴅ "
             )
     elif status == "off":
         await delcmd_off(chat_id)
-        await message.reply_text("🔴 ᴅɪꜱᴀʙʟᴇ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ")
+        await message.reply_text("🔴 ᗪɪꜱᴀʙʟᴇ Տᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ")
     else:
         await message.reply_text(
-            "ʀᴇᴀᴅ /help ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅꜱ"
+            "ᖇᴇᴀᴅ /help ᗰᴇꜱꜱᴀɢᴇ Tᴏ Kɴᴏᴡ ᕼᴏᴡ Tᴏ ᑌꜱᴇ Tʜɪꜱ ᑕᴍᴅꜱ"
         )
 
 
@@ -232,10 +232,10 @@ async def cbpause(_, query: CallbackQuery):
             ) or (
                 callsmusic.pytgcalls.active_calls[query.message.chat.id] == "paused"
             ):
-        await query.edit_message_text("❗️ nothing is playing", reply_markup=BACK_BUTTON)
+        await query.edit_message_text("❗️ ᑎothing Is ᑭlaying", reply_markup=BACK_BUTTON)
     else:
         callsmusic.pytgcalls.pause_stream(query.message.chat.id)
-        await query.edit_message_text("▶️ music is paused", reply_markup=BACK_BUTTON)
+        await query.edit_message_text("▶️ ᗰusic Is ᑭaused", reply_markup=BACK_BUTTON)
 
 @Client.on_callback_query(filters.regex("cbresume"))
 @cb_admin_check
@@ -246,17 +246,17 @@ async def cbresume(_, query: CallbackQuery):
             ) or (
                 callsmusic.pytgcalls.active_calls[query.message.chat.id] == "resumed"
             ):
-        await query.edit_message_text("❗️ nothing is paused", reply_markup=BACK_BUTTON)
+        await query.edit_message_text("❗️ ᑎothing Is ᑭaused", reply_markup=BACK_BUTTON)
     else:
         callsmusic.pytgcalls.resume_stream(query.message.chat.id)
-        await query.edit_message_text("⏸ music is resumed", reply_markup=BACK_BUTTON)
+        await query.edit_message_text("⏸ ᗰusic Is ᖇesumed", reply_markup=BACK_BUTTON)
 
 @Client.on_callback_query(filters.regex("cbend"))
 @cb_admin_check
 async def cbend(_, query: CallbackQuery):
     chat_id = get_chat_id(query.message.chat)
     if query.message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await query.edit_message_text("❗️ nothing is playing", reply_markup=BACK_BUTTON)
+        await query.edit_message_text("❗️ ᑎothing Is ᑭʟaying", reply_markup=BACK_BUTTON)
     else:
         try:
             queues.clear(query.message.chat.id)
@@ -294,7 +294,7 @@ async def cbskip(_, query: CallbackQuery):
 
 # ban & unban function
 
-@Client.on_message(filters.command("b", COMMAND_PREFIXES))
+@Client.on_message(filters.command("ban", COMMAND_PREFIXES))
 @authorized_users_only
 async def ban_user(_, message):
     is_admin = await admin_check(message)
@@ -316,7 +316,7 @@ async def ban_user(_, message):
             await message.reply_text(
                 "✅ successfully banned "
                 f"{user_first_name}"
-                " from this group !"
+                " from this group...🤗🤣"
             )
         else:
             await message.reply_text(
@@ -324,11 +324,11 @@ async def ban_user(_, message):
                 f"<a href='tg://user?id={user_id}'>"
                 f"{user_first_name}"
                 "</a>"
-                " from this group !"
+                " from this group...🤥"
             )
 
 
-@Client.on_message(filters.command("tb", COMMAND_PREFIXES))
+@Client.on_message(filters.command("tban", COMMAND_PREFIXES))
 @authorized_users_only
 async def temp_ban_user(_, message):
     is_admin = await admin_check(message)
@@ -377,7 +377,7 @@ async def temp_ban_user(_, message):
                 f" ,banned for {message.command[1]}!"
             )
 
-@Client.on_message(filters.command(["ub", "um"], COMMAND_PREFIXES))
+@Client.on_message(filters.command(["uban", "umute"], COMMAND_PREFIXES))
 @authorized_users_only
 async def un_ban_user(_, message):
     is_admin = await admin_check(message)
@@ -407,10 +407,10 @@ async def un_ban_user(_, message):
                 f"<a href='tg://user?id={user_id}'>"
                 f"{user_first_name}"
                 "</a> is not"
-                " restricted again!"
+                " restricted again...😏 "
             )
 
-@Client.on_message(filters.command("m", COMMAND_PREFIXES))
+@Client.on_message(filters.command("mute", COMMAND_PREFIXES))
 async def mute_user(_, message):
     is_admin = await admin_check(message)
     if not is_admin:
@@ -445,7 +445,7 @@ async def mute_user(_, message):
             )
 
 
-@Client.on_message(filters.command("tm", COMMAND_PREFIXES))
+@Client.on_message(filters.command("tmute", COMMAND_PREFIXES))
 async def temp_mute_user(_, message):
     is_admin = await admin_check(message)
     if not is_admin:
