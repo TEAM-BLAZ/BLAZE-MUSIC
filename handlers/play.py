@@ -424,7 +424,7 @@ async def play(_, message: Message):
     global useer
     if message.chat.id in DISABLED_GROUPS:
         return    
-    lel = await message.reply("🔄 **ruko JRA SABER KRO.. CHLA RHA HU...**")
+    lel = await message.reply("🔄 **RUKO JRA SABER KRO.. CHLA RHA HU...**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
     try:
@@ -661,8 +661,8 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"💡 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ɪɴ Qᴜᴇᴜᴇ**\n\n🏷 **ɴᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 **ᴢᴀɪᴅ ᴜꜱᴇʀ ʙʏ:** {message.from_user.mention}\n" \
-                   +f"\n🔢 **ᴛʀᴀᴄᴋ ᴘᴏꜱɪᴛɪᴏɴ:** » `{position}` «",
+            caption=f"💡 **Tʀᴀᴄᴋ ᗩᴅᴅᴇᴅ Iɴ ᑫᴜᴇᴜᴇ**\n\n🏷 **ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **💡 ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 **ᑌꜱᴇʀ ᗷʏ:** {message.from_user.mention}\n" \
+                   +f"\n🔢 **Tʀᴀᴄᴋ ᑭᴏꜱɪᴛɪᴏɴ:** » `{position}` «",
             reply_markup=keyboard
         )
     else:
@@ -681,8 +681,8 @@ async def play(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption=f"🏷 **ɴᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😍 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n" \
-                   +f"🎧 **ᴢᴀɪᴅ ᴜꜱᴇʀ ʙʏ:** {message.from_user.mention}",
+            caption=f"🏷 **ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **💡 ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n📺 **Տᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n" \
+                   +f"🎧 **ᑌꜱᴇʀ ᗷʏ:** {message.from_user.mention}",
             reply_markup=keyboard
         )
         os.remove("final.png")
@@ -765,8 +765,8 @@ async def lol_cb(b, cb):
         await b.send_photo(
         chat_id,
         photo="final.png",
-        caption=f"💡 **ᴛʀᴀᴄᴋ ɪɴ Qᴜᴇᴜᴇ**\n\n🏷 **ɴᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 **ᴢᴀɪᴅ ᴜꜱᴇʀ ʙʏ:** {r_by.mention}\n" \
-               +f"\n🔢 **ᴛʀᴀᴄᴋ ᴘᴏꜱɪᴛɪᴏɴ:** » `{position}` «",
+        caption=f"💡 **Tʀᴀᴄᴋ Iɴ ᑫᴜᴇᴜᴇ**\n\n🏷 **💍 ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **💡 ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 ** ᑌꜱᴇʀ ᗷʏ:** {r_by.mention}\n" \
+               +f"\n🔢 **Tʀᴀᴄᴋ ᑭᴏꜱɪᴛɪᴏɴ:**  {position} ",
         reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -786,8 +786,8 @@ async def lol_cb(b, cb):
         await b.send_photo(
         chat_id,
         photo="final.png",
-        caption=f"🏷 **ɴᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😍 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n" \
-               +f"🎧 **ᴢᴀɪᴅ ᴜꜱᴇʀ ʙʏ:** {r_by.mention}",
+        caption=f"🏷 **ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ ** 💡 ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😍 **Տᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n" \
+               +f"🎧 **ᑌꜱᴇʀ ᗷʏ:** {r_by.mention}",
         reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -909,8 +909,8 @@ async def ytplay(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **ɴᴀᴍᴇ:** [{title[:25]}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😍 **ꜱᴛᴀᴛᴜꜱ:** `Qᴜᴇᴜᴇᴅ ɪɴ ᴘᴏꜱɪᴛɪᴏɴ {position}`\n" \
-                    + f"🎧 **ᴢᴀɪᴅ ᴜꜱᴇʀ ʙʏ:** {message.from_user.mention}",
+            caption = f"🏷 **ᑎᴀᴍᴇ:** [{title[:25]}]({url})\n⏱ **💡 ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😍 **Տᴛᴀᴛᴜꜱ:** `Qᴜᴇᴜᴇᴅ Iɴ ᑭᴏꜱɪᴛɪᴏɴ {position}`\n" \
+                    + f"🎧 **ᑌꜱᴇʀ ᗷʏ:** {message.from_user.mention}",
                    reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -931,8 +931,8 @@ async def ytplay(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **ɴᴀᴍᴇ:** [{title[:25]}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n" \
-                    + f"🎧 **Request by:** {message.from_user.mention}",
+            caption = f"🏷 **ᑎᴀᴍᴇ:** [{title[:25]}]({url})\n⏱ **ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **Տᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n" \
+                    + f"🎧 **ᖇequest by:** {message.from_user.mention}",
                    reply_markup=keyboard,)
         os.remove("final.png")
         return await lel.delete()
