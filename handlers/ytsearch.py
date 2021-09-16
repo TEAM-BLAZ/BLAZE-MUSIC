@@ -22,11 +22,11 @@ async def ytsearch(_, message: Message):
         results = YoutubeSearch(query, max_results=5).to_dict()
         i = 0
         text = ""
-        while i < 5:
-            text += f"**🅝🅐🅜🅔:** `{results[i]['title']}`\n"
-            text += f"**🅓🅤🅡🅐🅣🅘🅞🅝:** {results[i]['duration']}\n"
-            text += f"**🅥🅘🅔🅦🅢:** {results[i]['views']}\n"
-            text += f"**🅒🅗🅐🅝🅝🅔🅛:** {results[i]['channel']}\n"
+        while i < 1:
+            text += f"**ᑎᴀᴍᴇ:** `{results[i]['title']}`\n"
+            text += f"**ᗪᴜʀᴀᴛɪᴏɴ:** {results[i]['duration']}\n"
+            text += f"**ᐯɪᴇᴡs:** {results[i]['views']}\n"
+            text += f"**ᑕʜᴀɴɴᴇʟ:** {results[i]['channel']}\n"
             text += f"https://www.youtube.com{results[i]['url_suffix']}\n\n"
             i += 1
         await m.edit(text, disable_web_page_preview=True)
