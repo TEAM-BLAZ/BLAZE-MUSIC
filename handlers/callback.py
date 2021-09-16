@@ -166,10 +166,10 @@ async def cbadmin(_, query: CallbackQuery):
 /control - open the player settings panel
 /delcmd (on | off) - enable / disable del cmd feature
 /musicplayer (on / off) - disable / enable music player in your group
-/b and /tb (ban / temporary ban) - banned permanently or temporarily banned user in group
-/ub - to unbanned user you're banned from group
-/m and /tm (mute / temporary mute) - mute permanently or temporarily muted user in group
-/um - to unmute user you're muted in group
+/ban and /tban (ban / temporary ban) - banned permanently or temporarily banned user in group
+/uban - to unbanned user you're banned from group
+/mute and /tmute (mute / temporary mute) - mute permanently or temporarily muted user in group
+/umute - to unmute user you're muted in group
 
 ⚡ 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘  @THE_BLAZE_NETWORK""",
         reply_markup=InlineKeyboardMarkup(
