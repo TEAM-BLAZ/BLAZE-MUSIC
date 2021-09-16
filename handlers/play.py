@@ -424,7 +424,7 @@ async def play(_, message: Message):
     global useer
     if message.chat.id in DISABLED_GROUPS:
         return    
-    lel = await message.reply("🔄 **processing...**")
+    lel = await message.reply("🔄 **Ruko Jra Saber Kro..Chla Rha Hu...**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
     try:
@@ -441,38 +441,38 @@ async def play(_, message: Message):
             if administrator == message.from_user.id:
                 if message.chat.title.startswith("Channel Music: "):
                     await lel.edit(
-                        f"<b>please add {user.first_name} to your channel.</b>",
+                        f"<b>**Please Add {user.first_name} To Your Channel.**</b>",
                     )
                     pass
                 try:
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ꜰɪʀꜱᴛ.</b>",
+                        "<b>**ᗰᴀᴋᴇ ᗰᴇ ᗩᴅᴍɪɴ ᖴɪʀꜱᴛ.**</b>",
                     )
                     return
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "🤖: i'm joined to this group for playing music on voice chat"
+                        message.chat.id, "**     Tᴇᴀᴍ♡ᗷʟᴀᴢᴇ    \n\n 🤖: I'ᴍ ᒍᴏɪɴᴇᴅ Tᴏ Yᴏᴜʀ Ꮆʀᴏᴜᴘ**"
                     )
                     await lel.edit(
-                        "<b>helper userbot joined your chat</b>",
+                        "<b>ᗷʟᴀᴢᴇ ᕼᴇʟᴘ ᑌsᴇʀʙᴏᴛ ᒍᴏɪɴᴇᴅ ᑌʀ ᑕʜᴀᴛ..🤗🤭</b>",
                     )
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     # print(e)
                     await lel.edit(
-                        f"<b>⛑ Flood Wait Error ⛑\n{user.first_name} Zaid helper is not in Ur chat plz add Manually."
-                        f"\n\nZaid Assistant @{ASSISTANT_NAME} try to add manually</b>",
+                        f"<b>⛑ FLOOD WAIT ERROR ⛑\n{user.first_name} IS NOT IN YOUR GROUP PLEASE ADD...🥺"
+                        f"\n\nBLAZE ASSISTANT @{ASSISTANT_NAME} TRY TO ADD MANUALLY</b>",
                     )
     try:
         await USER.get_chat(chid)
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>{user.first_name} was banned in this group, ask admin to unban @{ASSISTANT_NAME} manually.</i>"
+            f"<i>{user.first_name} WAS BANNED IN THIS GROUP, UNBAN @{ASSISTANT_NAME}...😒</i>"
         )
         return
     text_links=None
@@ -504,15 +504,15 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ **Song Not longer than** `{DURATION_LIMIT}` **hehe!**"
+                f"❌ **SONG NOT LONGER THAN** {DURATION_LIMIT}"
             )
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
+                    InlineKeyboardButton("🖱 ᗰᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("🗑 ᑕʟᴏsᴇ", callback_data="cls"),
                 ],[
-                    InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK")
+                    InlineKeyboardButton("📣 ᑕʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK")
                 ],
             ]
         )
@@ -531,7 +531,7 @@ async def play(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("🔎 **finding song...**")
+        await lel.edit("🔎 **FINDING SONG...**")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -547,7 +547,7 @@ async def play(_, message: Message):
             views = results[0]["views"]
         except Exception as e:
             await lel.edit(
-                "😕 **Sorry, we couldn't find your requested song**\n• Check that the name is correct or try by searching in inline mode."
+                "😕 **SORRY, WE COULDN'T FIND YOUR REQUESTED SONG**\n• CHECK THAT THE NAME IS CORRECT OR TRY BY SEARCHING IN INLINE MODE."
             )
             print(str(e))
             return
@@ -556,10 +556,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
+                    InlineKeyboardButton("🖱 ᗰᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("🗑 ᑕʟᴏsᴇ", callback_data="cls"),
                 ],[
-                    InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK")
+                    InlineKeyboardButton("📣 ᑕʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK")
                 ],
             ]
         )
@@ -576,17 +576,17 @@ async def play(_, message: Message):
         try:
           results = YoutubeSearch(query, max_results=6).to_dict()
         except:
-          await lel.edit("**please give a song name you want to play !**")
+          await lel.edit("**PLEASE GIVE A SONG NAME YOU WANT TO PLAY...😡**")
         # veez project
         try:
-            toxxt = "⚡ __ᴄʜʜᴏꜱᴇ ᴛʜᴇ ꜱᴏɴɢ ᴡʜɪᴄʜ ᴜ ᴡᴀɴᴛ ᴛᴏ ᴘʟᴀʏ:__\n\n"
+            toxxt = "⚡ __ᑕʜʜᴏꜱᴇ Tʜᴇ Տᴏɴɢ ᗯʜɪᴄʜ Yᴏᴜ ᗯᴀɴᴛ Tᴏ ᑭʟᴀʏ..🎶🎻🎼__\n\n"
             j = 0
             useer=user_name
-            emojilist = ["1","2","3","4","5","6"]
-            while j < 6:
+            emojilist = ["1","2","3","4","5"]
+            while j < 5:
                 toxxt += f"{emojilist[j]} [{results[j]['title'][:30]}](https://youtube.com{results[j]['url_suffix']})\n"
-                toxxt += f" ├ 💡 **ᴅᴜʀᴀᴛɪᴏɴ** - {results[j]['duration']}\n"
-                toxxt += f" └ ⚡ __ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} ᴢᴀɪᴅ__\n\n"
+                toxxt += f" ├ 💡 **ᗪᴜʀᴀᴛɪᴏɴ** - {results[j]['duration']}\n"
+                toxxt += f" └ ⚡ __📌ᑭᴏᴡᴇʀᴇᴅ ᗷʏ:-#𝗧𝗛𝗘_𝗕𝗟𝗔𝗭𝗘_𝗡𝗘𝗧𝗪𝗢𝗥𝗞__ \n\n"
                 j += 1            
             keyboard = InlineKeyboardMarkup(
                 [
@@ -598,11 +598,8 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton("4", callback_data=f'plll 3|{query}|{user_id}'),
                         InlineKeyboardButton("5", callback_data=f'plll 4|{query}|{user_id}'),
-                    ],
-                    [
-                        InlineKeyboardButton("6", callback_data=f'plll 5|{query}|{user_id}'),
-                    ],
-                    [InlineKeyboardButton(text="🗑ᴢ ᴄʟᴏꜱᴇ", callback_data="cls")],
+                    ],                   
+                    [InlineKeyboardButton(text="⏤͟͟͞⃟💫🇧ʟᴀᴢᴇ ᑕʟᴏꜱᴇ 🗑️", callback_data="cls")],
                 ]
             )
             await message.reply_photo(
@@ -616,7 +613,7 @@ async def play(_, message: Message):
             return
             # veez project
         except:
-            await lel.edit("__no more results to choose, starting to playing...__")
+            await lel.edit("__NO MORE RESULTS TO CHOOSE, STARTING TO PLAYING...😁__")
                         
             # print(results)
             try:
@@ -631,7 +628,7 @@ async def play(_, message: Message):
                 views = results[0]["views"]
             except Exception as e:
                 await lel.edit(
-                "**❌ song not found.** please give a valid song name."
+                "**❌ SONG NOT FOUND.** PLEASE GIVE A VALID SONG NAME..."
             )
                 print(str(e))
                 return
@@ -739,11 +736,12 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
-                ],[
-                    InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK")
-                ],
+                InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
+                InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
+            ],[
+                InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/THE_BLAZE_NETWORK"),
+                InlineKeyboardButton("✨ ɢʀᴏᴜᴘ", url=f"https://t.me/blaze_spammer")
+            ],
             ]
     )
     requested_by = useer_name
