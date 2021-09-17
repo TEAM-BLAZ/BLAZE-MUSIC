@@ -257,7 +257,7 @@ async def ytmusic(client, message: Message):
     urlissed = get_text(message)
 
     pablo = await client.send_message(
-        message.chat.id, f"💡 __Getting {urlissed} from zaid server, please wait...__"
+        message.chat.id, f"💡 __Getting {urlissed}.., please wait...__"
     )
     if not urlissed:
         await pablo.edit("invalid command syntax, please check help menu to know more!")
@@ -307,7 +307,7 @@ async def ytmusic(client, message: Message):
 
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
-    capy = f"✨ **video name :** __{thum}__ \n💭 **zaid user by:** __{urlissed}__ \n📣 **channel :** __{thums}__ \n📌 **link :** [click here]({mo})"
+    capy = f"✨ **video name :** __{thum}__ \n💭 ** by:** __{urlissed}__ \n📣 **channel :** __{thums}__ \n📌 **link :** [click here]({mo})"
     await client.send_video(
         message.chat.id,
         video=open(file_stark, "rb"),
