@@ -13,7 +13,6 @@ async def songs(client, message):
         text = message.text.split(None, 1)[1]
         results = await veez.get_inline_bot_results(1872165533, f"music {text}")
         await veez.send_inline_bot_result(
-            message.chat.id, results.query_id, results.results[0]. 
-        )
+            message.chat.id, results.query_id, results.results[0]. )
     except Exception:
         await message.reply_text("❗ **SONG NOT FOUND.**")
