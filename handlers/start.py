@@ -100,9 +100,13 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text=" •☞ ᕼᴏᴡ Tᴏ ᑌsᴇ ᗰᴇ❓ ", callback_data=f"cbguide"
+                        text=" •☞ ᕼᴏᴡ Tᴏ ᑌsᴇ ᗰᴇ❓ ", callback_data=f"cbguide")
+                ],
+                [
+                    InlineKeyboardButton(
+                        "ᑕᴍᴅꜱ ᒪɪꜱᴛ⚙️", callback_data="cbhelp"
                     )
-                ]
+                ],
             ]
         )
     )
