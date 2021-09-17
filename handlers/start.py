@@ -50,7 +50,7 @@ async def start_(client: Client, message: Message):
                          " •☞ ᑕᴍᴅs 🕹 ", url=f"https://telegra.ph/%E1%97%B7%CA%9F%E1%B4%80%E1%B4%A2%E1%B4%87-%E1%97%B0%E1%B4%9Cs%C9%AA%E1%B4%84-%E1%97%B7%E1%B4%8F%E1%B4%9B-09-14-2"),
                 
                     InlineKeyboardButton(
-                        " •☞ Oᴡɴᴇʀ 🕵 ", url=f"https://t.me/BLAZE_MUSIC")
+                        " •☞ Oᴡɴᴇʀ 🕵 ", url=f"https://t.me/BLAZE_OWNER")
                 ],[
                     InlineKeyboardButton(
                         " •☞ Տᴜᴘᴘᴏʀᴛ ᘜʀᴏᴜᴘ 📣 ", url=f"https://t.me/Blaze_Support"),
