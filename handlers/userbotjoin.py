@@ -16,7 +16,7 @@ async def addchannel(client, message):
         invitelink = await client.export_chat_invite_link(chid)
     except:
         await message.reply_text(
-            "<b>Make Me As Admin First...😒</b>",
+            "<b>MAKE ME AS ADMIN First'...😒</b>",
         )
         return
 
@@ -30,17 +30,17 @@ async def addchannel(client, message):
         await USER.send_message(message.chat.id, "🤖: ⏤͟͟͞➖⃟🥀𓆩Bʅαȥҽ🕊️⃝❤️Assɪsᴛᴀɴᴛ Jᴏɪɴᴇᴅ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ....😊")
     except UserAlreadyParticipant:
         await message.reply_text(
-            "<b>helper already in your chat</b>",
+            "<b>HELPER ALREADY IN YOUR char</b>",
         )
     except Exception as e:
         print(e)
         await message.reply_text(
-            f"<b>🛑 Flood Wait Error 🛑 \n User {user.first_name} couldn't join your group due to heavy join requests for userbot! Make sure user is not banned in group...."
-            "\n\nOr manually add Asisstant to your Group and try again</b>",
+            f"<b>🛑 FLOOD WAIT ERROR 🛑 \n USER {user.first_name} COULDN'T JOINED YOUR GROUP DUE TO HEAVY JOIN REQUESTS FOR USERBOT! MAKE SURE USER IS NOT BANNED IN GROUP...."
+            "\n\nOr MANUALLY ADD ASSISTANT TO YOUR GROUP AND TRY AGAIN</b>",
         )
         return
     await message.reply_text(
-        "<b>helper userbot joined your chat</b>",
+        "<b>USERBOT JOINED YOUR GROUP</b>",
     )
 
 
@@ -51,8 +51,8 @@ async def rem(client, message):
         await USER.leave_chat(message.chat.id)
     except:
         await message.reply_text(
-            f"<b>User couldn't leave your group! May be floodwaits."
-            "\n\nOr manually kick me from to your Group</b>",
+            f"<b>USER COULDN'T LEAVE YOUR GROUP! MAY BE FLOODWATERS."
+            "\n\nOr MANUALLY KICK ME FROM TO YOUR GROUP</b>",
         )
         return
     
@@ -61,7 +61,7 @@ async def bye(client, message):
     if message.from_user.id in SUDO_USERS:
         left=0
         failed=0
-        lol = await message.reply("Assistant Leaving all chats")
+        lol = await message.reply("ASSISTANT LEAVING ALL GROUPS")
         async for dialog in USER.iter_dialogs():
             try:
                 await USER.leave_chat(dialog.chat.id)
@@ -83,14 +83,14 @@ async def addcchannel(client, message):
       conid = conchat.linked_chat.id
       chid = conid
     except:
-      await message.reply("is the chat even linked ?")
+      await message.reply("IS THE CHAT EVEN LINKED ?")
       return    
     chat_id = chid
     try:
         invitelink = await client.export_chat_invite_link(chid)
     except:
         await message.reply_text(
-            "<b>Promote Me Group Admin First...🤗</b>",
+            "<b>PROMOTE ME GROUP ADMIN FIRST...🤗</b>",
         )
         return
 
@@ -101,19 +101,19 @@ async def addcchannel(client, message):
 
     try:
         await USER.join_chat(invitelink)
-        await USER.send_message(message.chat.id, "🤖: i joined here as you requested")
+        await USER.send_message(message.chat.id, "🤖: I JOINED HERE....")
     except UserAlreadyParticipant:
         await message.reply_text(
-            "<b>helper already in your channel</b>",
+            "<b>ASSISTANT ALREADY IN YOUR CHANNEL</b>",
         )
         return
     except Exception as e:
         print(e)
         await message.reply_text(
-            f"<b>🛑 Flood Wait Error 🛑 \n User {user.first_name} couldn't join your channel due to heavy join requests for userbot! Make sure user is not banned in channel for more info join @Zaid_Support."
-            f"\n\nOr manually add @{ASSISTANT_NAME} to your Group and try again</b>",
+            f"<b>🛑 FLOOD WAIT ERROR 🛑 \n USER {user.first_name} COULDN'T JOIN YOUR CHANNEL DUE TO HEAVY JOIN REQUESTS FOR USERBOT! MAKE SURE USER IS NOT BANNED IN CHANNEL..."
+            f"\n\n AND MANUALLY ADD @{ASSISTANT_NAME} TO YOUR GROUP AND TRY AGAIN</b>",
         )
         return
     await message.reply_text(
-        "<b>helper userbot joined your channel</b>",
+        "<b> USERBOT JOINED YOUR CHANNEL</b>",
     )
