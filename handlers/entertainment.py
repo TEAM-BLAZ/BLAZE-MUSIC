@@ -64,9 +64,9 @@ async def lirik(_, message):
             await message.reply_text("**give a lyric name too !**")
             return
         query = message.text.split(None, 1)[1]
-        rep = await message.reply_text("🔎 **searching lyrics...**")
+        rep = await message.reply_text("🔎 **SEARCHING LYRICS...**")
         resp = requests.get(f"https://api-tede.herokuapp.com/api/lirik?l={query}").json()
         result = f"{resp['data']}"
         await rep.edit(result)
     except Exception:
-        await rep.edit("**Lyrics not found.** please give a valid song name !")
+        await rep.edit("**LYRICS NOT FOUND.** PLEASE GIVE A VALID SONG NAME !")
