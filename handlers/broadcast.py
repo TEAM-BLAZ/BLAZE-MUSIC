@@ -18,15 +18,15 @@ async def broadcast(_, message: Message):
     else:
         wtf = await message.reply("`ꜱᴛᴀʀᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀꜱᴛ ...`")
         if not message.reply_to_message:
-            await wtf.edit("ᴘʟᴢ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ ꜰᴏʀ ʙʀᴏᴀᴅᴄᴀꜱᴛ!")
+            await wtf.edit("Pʟᴢ Rᴇᴘʟʏ Tᴏ A Mᴇꜱꜱᴀɢᴇ Fᴏʀ Bʀᴏᴀᴅᴄᴀꜱᴛ!")
             return
         lmao = message.reply_to_message.text
         async for dialog in veez.iter_dialogs():
             try:
                 await veez.send_message(dialog.chat.id, lmao)
                 sent = sent+1
-                await wtf.edit(f"`ʙʀᴏᴀᴅᴄᴀꜱᴛɪɴɢ...` \n\n**ꜱᴇɴᴛ ᴛᴏ:** `{sent}` ᴄʜᴀᴛꜱ \n**ꜰᴀɪʟᴇᴅ ɪɴ:** {failed} ᴄʜᴀᴛꜱ")
+                await wtf.edit(f"`Bʀᴏᴀᴅᴄᴀꜱᴛɪɴɢ...` \n\n**SᴇɴD Tᴏ:** `{sent}` Cʜᴀᴛꜱ \n**Fᴀɪʟᴇᴅ Iɴ:** {failed} Cʜᴀᴛꜱ")
                 await asyncio.sleep(3)
             except:
                 failed=failed+1
-        await message.reply_text(f"`ɢᴄᴀꜱᴛ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴘᴏᴡᴇʀ ʙʏ ᴢᴀɪᴅ..` \n\n**ꜱᴇɴᴛ ᴛᴏ:** `{sent}` ᴄʜᴀᴛꜱ \n**ꜰᴀɪʟᴇᴅ ɪɴ:** {failed} ᴄʜᴀᴛꜱ")
+        await message.reply_text(f"`Gᴄᴀꜱᴛ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ..` \n\n**SᴇɴD Tᴏ:** `{sent}` Cʜᴀᴛꜱ \n**Fᴀɪʟᴇᴅ Iɴ:** {failed} Cʜᴀᴛꜱ")
