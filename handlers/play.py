@@ -661,7 +661,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"💡 **Tʀᴀᴄᴋ ᗩᴅᴅᴇᴅ Iɴ ᑫᴜᴇᴜᴇ**\n\n🏷 **ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **💡 ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 **ᑌꜱᴇʀ ᗷʏ:** {message.from_user.mention}\n" \
+            caption=f"💡 **Tʀᴀᴄᴋ ᗩᴅᴅᴇᴅ Iɴ ᑫᴜᴇᴜᴇ**\n\n🏷 **ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 **ᑌꜱᴇʀ ᗷʏ:** {message.from_user.mention}\n" \
                    +f"\n🔢 **Tʀᴀᴄᴋ ᑭᴏꜱɪᴛɪᴏɴ:** » `{position}` «",
             reply_markup=keyboard
         )
@@ -681,7 +681,7 @@ async def play(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption=f"🏷 **ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **💡 ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n📺 **Տᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n" \
+            caption=f"🏷 **ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n📺 **Տᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n" \
                    +f"🎧 **ᑌꜱᴇʀ ᗷʏ:** {message.from_user.mention}",
             reply_markup=keyboard
         )
@@ -765,7 +765,7 @@ async def lol_cb(b, cb):
         await b.send_photo(
         chat_id,
         photo="final.png",
-        caption=f"💡 **Tʀᴀᴄᴋ Iɴ ᑫᴜᴇᴜᴇ**\n\n🏷 **💍 ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **💡 ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 ** ᑌꜱᴇʀ ᗷʏ:** {r_by.mention}\n" \
+        caption=f"💡 **Tʀᴀᴄᴋ Iɴ ᑫᴜᴇᴜᴇ**\n\n🏷 **ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 ** ᑌꜱᴇʀ ᗷʏ:** {r_by.mention}\n" \
                +f"\n🔢 **Tʀᴀᴄᴋ ᑭᴏꜱɪᴛɪᴏɴ:**  {position} ",
         reply_markup=keyboard,
         )
@@ -786,7 +786,7 @@ async def lol_cb(b, cb):
         await b.send_photo(
         chat_id,
         photo="final.png",
-        caption=f"🏷 **ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ ** 💡 ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😍 **Տᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n" \
+        caption=f"🏷 **ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ ** ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😍 **Տᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n" \
                +f"🎧 **ᑌꜱᴇʀ ᗷʏ:** {r_by.mention}",
         reply_markup=keyboard,
         )
@@ -909,7 +909,7 @@ async def ytplay(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **ᑎᴀᴍᴇ:** [{title[:25]}]({url})\n⏱ **💡 ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😍 **Տᴛᴀᴛᴜꜱ:** `Qᴜᴇᴜᴇᴅ Iɴ ᑭᴏꜱɪᴛɪᴏɴ {position}`\n" \
+            caption = f"🏷 **ᑎᴀᴍᴇ:** [{title[:25]}]({url})\n⏱ ** ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😍 **Տᴛᴀᴛᴜꜱ:** `Qᴜᴇᴜᴇᴅ Iɴ ᑭᴏꜱɪᴛɪᴏɴ {position}`\n" \
                     + f"🎧 **ᑌꜱᴇʀ ᗷʏ:** {message.from_user.mention}",
                    reply_markup=keyboard,
         )
