@@ -34,7 +34,7 @@ async def botstats(_, message: Message):
     disk_usage = psutil.disk_usage('/').percent
     total_users = await db.total_users_count()
     await message.reply_text(
-        text=f"**📊 stats Of @{BOT_USERNAME}** \n\n**🤖 Z version:** `v6.5` \n\n**🙎🏼 Users:** \n » **users in pm:** `{total_users}` \n\n**💾 disk usage,** \n » **disk space:** `{total}` \n » **used:** `{used}({disk_usage}%)` \n » **free:** `{free}` \n\n**🎛 hardware usage,** \n » **CPU usage:** `{cpu_usage}%` \n » **RAM usage:** `{ram_usage}%`",
+        text=f"**📊 Տᴛᴀᴛs Oғ @{BOT_USERNAME}** \n\n**🤖 ᐯᴇʀsɪᴏɴ:** `v6.5` \n\n**🙎🏼 ᑌsᴇʀs:** \n » **USERS IN PM:** `{total_users}` \n\n**💾 DISK USAGE,** \n » **DISK SPACE:** `{total}` \n » **USED:** `{used}({disk_usage}%)` \n » **free:** `{free}` \n\n**🎛 hardware usage,** \n » **CPU usage:** `{cpu_usage}%` \n » **RAM USAGE:** `{ram_usage}%`",
         parse_mode="Markdown",
         quote=True
     )
@@ -51,7 +51,7 @@ async def broadcast_handler_open(_, m: Message):
 async def ban(c: Client, m: Message):
     if len(m.command) == 1:
         await m.reply_text(
-            f"this command for ban user, read /help for more info !",
+            f"**THIS COMMAND FOR BAN USER, READ /help FOR MORE INFO !**",
             quote=True
         )
         return
@@ -68,7 +68,7 @@ async def ban(c: Client, m: Message):
             ban_log_text += '\n\n✅ this notification was sent to that user'
         except:
             traceback.print_exc()
-            ban_log_text += f"\n\n❌ **failed sent this notification to that user** \n\n`{traceback.format_exc()}`"
+            ban_log_text += f"\n\n❌ **FAILED SENT THIS NOTIFICATION TO THAT USER** \n\n`{traceback.format_exc()}`"
         await db.ban_user(user_id, ban_duration, ban_reason)
         print(ban_log_text)
         await m.reply_text(
@@ -78,7 +78,7 @@ async def ban(c: Client, m: Message):
     except:
         traceback.print_exc()
         await m.reply_text(
-            f"❌ an error occoured !, traceback is given below\n\n`{traceback.format_exc()}`",
+            f"❌ AN ERROR OCCOURED !, TRACEBACK IS GIVEN BELOW\n\n`{traceback.format_exc()}`",
             quote=True
         )
 
@@ -94,16 +94,16 @@ async def unban(c: Client, m: Message):
         return
     try:
         user_id = int(m.command[1])
-        unban_log_text = f"`unbanning user...` \n**user id:**{user_id}"
+        unban_log_text = f"`UNBANNING USER...` \n**user id:**{user_id}"
         try:
             await c.send_message(
                 user_id,
-                f"🎊 congratulations, you was unbanned!"
+                f"🎊 CONGRATULATIONS, YOU WAS UNBANNED!"
             )
-            unban_log_text += '\n\n✅ this notification was sent to that user'
+            unban_log_text += '\n\n✅ THIS NOTIFICATION WAS SENT TO THAT USER'
         except:
             traceback.print_exc()
-            unban_log_text += f"\n\n❌ **failed sent this notification to that user**\n\n`{traceback.format_exc()}`"
+            unban_log_text += f"\n\n❌ **FAILED SENT THIS NOTIFICATION TO that USER**\n\n`{traceback.format_exc()}`"
         await db.remove_ban(user_id)
         print(unban_log_text)
         await m.reply_text(
@@ -113,7 +113,7 @@ async def unban(c: Client, m: Message):
     except:
         traceback.print_exc()
         await m.reply_text(
-            f"❌ an error occoured !, traceback is given below\n\n`{traceback.format_exc()}`",
+            f"❌ AN ERROR OCCOURED !, TRACEBACK IS GIVEN BELOW\n\n`{traceback.format_exc()}`",
             quote=True
         )
 
@@ -130,8 +130,8 @@ async def _banned_usrs(_, m: Message):
         banned_on = banned_user['ban_status']['banned_on']
         ban_reason = banned_user['ban_status']['ban_reason']
         banned_usr_count += 1
-        text += f"⫸ **user id**: `{user_id}`\n⫸ **ban duration**: `{ban_duration}`\n⫸ **banned date**: `{banned_on}`\n⫸ **ban reason**: `{ban_reason}`\n\n"
-    reply_text = f"⫸ **total banned:** `{banned_usr_count}`\n\n{text}"
+        text += f"⫸ **USER ID**: `{user_id}`\n⫸ **BAN DURATION**: `{ban_duration}`\n⫸ **BANNED DATE**: `{banned_on}`\n⫸ **BAN REASON**: `{ban_reason}`\n\n"
+    reply_text = f"⫸ **TOTAL BANNED:** `{banned_usr_count}`\n\n{text}"
     if len(reply_text) > 4096:
         with open('banned-user-list.txt', 'w') as f:
             f.write(reply_text)
