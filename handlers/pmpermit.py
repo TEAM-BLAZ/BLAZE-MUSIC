@@ -15,10 +15,9 @@ async def pmPermit(client: USER, message: Message):
             chat_id = message.chat.id
             if chat_id in pchats:
                 return
-            await USER.send_message.reply_photo(
+            await USER.send_message(
                 message.chat.id, 
-        photo=f"{BOT_IMG}",
-        caption=f"•**☞ HELLO I'M MUSIC ASSISTANT OF** {BOT_NAME}...\n•**☞ POWERED BY**:- @THE_BLAZE_NETWORK\n\n•**⫸** DON'T SPAM MESSAGE.....\n•**⫸** DON'T SEND ME ANYTHING CONFIDENTIAL..\n\n•**☞ JOIN HERE ..  ☟☟☟☟**\n\n•**⫸ MUSIC..** @AS_M_USIC_LOVER\n•**⫸ BLAZE OFFICIAL..** @the_blaze_network\n•**⫸ BLAZE SUPPORT..** @BLAZE_SUPPORT\n•__**⫸ •☞ If You Want I Can Join Your Group. So Send The Link Of Your Group...**__\n\n•**☞ MY BOT..** @BLAZEMUSIC_BOT",
+        f"•**☞ HELLO I'M MUSIC ASSISTANT OF** {BOT_NAME}...\n•**☞ POWERED BY**:- @THE_BLAZE_NETWORK\n\n•**⫸** DON'T SPAM MESSAGE.....\n•**⫸** DON'T SEND ME ANYTHING CONFIDENTIAL..\n\n•**☞ JOIN HERE ..  ☟☟☟☟**\n\n•**⫸ MUSIC..** @AS_M_USIC_LOVER\n•**⫸ BLAZE OFFICIAL..** @the_blaze_network\n•**⫸ BLAZE SUPPORT..** @BLAZE_SUPPORT\n•__**⫸ •☞ If You Want I Can Join Your Group. So Send The Link Of Your Group...**__\n\n•**☞ MY BOT..** @BLAZEMUSIC_BOT",
             )
             return
 
