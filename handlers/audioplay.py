@@ -1,7 +1,4 @@
-# this module i created only for playing music using audio file, idk, because the audio player on play.py module not working
-# so this is the alternative
-# audio play function
-#Ur motherfucker If U Kang And Don't Give Creadits
+
 
 from os import path
 
@@ -24,7 +21,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @errors
 async def stream(_, message: Message):
 
-    lel = await message.reply("🔁 **ᴘʀᴏᴄᴇꜱꜱɪɴɢ** ᴢ ᴘʟᴀʏᴇʀ...")
+    lel = await message.reply("🔁 **ᑭʀᴏᴄᴇꜱꜱɪɴɢ....**")
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
 
