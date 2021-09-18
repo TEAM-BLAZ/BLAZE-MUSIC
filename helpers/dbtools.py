@@ -19,7 +19,6 @@ async def handle_user_status(bot, cmd):
             LOG_CHANNEL,
             f"**📣 Notification** \n\n#NEW_USER **start use your bot!** \n\nFirst name: `{cmd.from_user.first_name}` \nUser id: `{cmd.from_user.id}` \nProfile link: [{cmd.from_user.first_name}](tg://user?id={cmd.from_user.id})"
         )
-
     ban_status = await db.get_ban_status(chat_id)
     if ban_status["is_banned"]:
         if (
