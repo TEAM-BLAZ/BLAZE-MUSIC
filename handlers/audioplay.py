@@ -32,7 +32,7 @@ async def stream(_, message: Message):
                         text="Ꮆʀᴏᴜᴘ",
                         url=f"https://t.me/BLAZE_SUPPORT"),
                     InlineKeyboardButton(
-                        text="Ꮦʜᴀɴɴᴇʟ",
+                        text="ᑕʜᴀɴɴᴇʟ",
                         url=f"https://t.me/THE_BLAZE_NETWORK")
                 ]
             ]
