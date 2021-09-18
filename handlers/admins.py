@@ -264,7 +264,7 @@ async def cbend(_, query: CallbackQuery):
             pass
         
         callsmusic.pytgcalls.leave_group_call(query.message.chat.id)
-        await query.edit_message_text("✅ the music queue has been cleared and successfully left voice chat", reply_markup=BACK_BUTTON)
+        await query.edit_message_text("✅ THE MUSIC QUEUE HAS BEEN CLEARED AND SUCCESSFULLY LEFT VOICE CHAT", reply_markup=BACK_BUTTON)
 
 @Client.on_callback_query(filters.regex("cbskip"))
 @cb_admin_check
@@ -272,7 +272,7 @@ async def cbskip(_, query: CallbackQuery):
     global que
     chat_id = get_chat_id(query.message.chat)
     if query.message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await query.edit_message_text("❗️ nothing is playing", reply_markup=BACK_BUTTON)
+        await query.edit_message_text("❗️ NOTHING IS PLAYING", reply_markup=BACK_BUTTON)
     else:
         queues.task_done(query.message.chat.id)
         
@@ -288,7 +288,7 @@ async def cbskip(_, query: CallbackQuery):
         skip = qeue.pop(0)
     if not qeue:
         return
-    await query.edit_message_text(f"⏭ skipped music\n\n» skipped : **{skip[0]}**\n» now playing : **{qeue[0][0]}**", reply_markup=BACK_BUTTON)
+    await query.edit_message_text(f"⏭ SKIPPED MUSIC\n\n» SKIPPED : **{skip[0]}**\n» NOW PLAYING : **{qeue[0][0]}**", reply_markup=BACK_BUTTON)
 
 # (C) Veez Music Project
 
