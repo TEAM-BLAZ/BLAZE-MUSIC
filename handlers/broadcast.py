@@ -1,4 +1,3 @@
-#Ur motherfucker If U Kang And Don't Give Creadits
 
 import asyncio
 
@@ -16,7 +15,7 @@ async def broadcast(_, message: Message):
     if message.from_user.id not in SUDO_USERS:
         return
     else:
-        wtf = await message.reply("`ꜱᴛᴀʀᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀꜱᴛ ...`")
+        wtf = await message.reply("Տᴛᴀʀᴛɪɴɢ ᗷʀᴏᴀᴅᴄᴀꜱᴛ ...")
         if not message.reply_to_message:
             await wtf.edit("Pʟᴢ Rᴇᴘʟʏ Tᴏ A Mᴇꜱꜱᴀɢᴇ Fᴏʀ Bʀᴏᴀᴅᴄᴀꜱᴛ!")
             return
