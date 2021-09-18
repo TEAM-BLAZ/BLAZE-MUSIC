@@ -29,11 +29,11 @@ async def stream(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="ɢʀᴏᴜᴘ",
-                        url=f"https://t.me/Zaid_Team1"),
+                        text="Ꮆʀᴏᴜᴘ",
+                        url=f"https://t.me/BLAZE_SUPPORT"),
                     InlineKeyboardButton(
-                        text="ᴄʜᴀɴɴᴇʟ",
-                        url=f"https://t.me/Zaid_Updates")
+                        text="Ꮦʜᴀɴɴᴇʟ",
+                        url=f"https://t.me/THE_BLAZE_NETWORK")
                 ]
             ]
         )
@@ -44,7 +44,7 @@ async def stream(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed to play!"
+                f"❌ VIDEOS LONGER THAN {DURATION_LIMIT} MINUTE(s) AREN'T ALLOWED TO PLAY...!"
             )
 
         file_name = get_file_name(audio)
@@ -55,14 +55,14 @@ async def stream(_, message: Message):
     elif url:
         file_path = await converter.convert(youtube.download(url))
     else:
-        return await lel.edit_text("ɢɪᴠᴇ ꜱᴏᴍᴇᴛʜɪɴɢꜱ ʟɪᴋᴇ ᴀᴜᴅɪᴏ ꜰɪʟᴇꜱ ᴀɴᴅ ʏᴛ ʟɪɴᴋ!")
+        return await lel.edit_text("Ꮆɪᴠᴇ Տᴏᴍᴇᴛʜɪɴɢꜱ ᒪɪᴋᴇ ᗩᴜᴅɪᴏ ᖴɪʟᴇꜱ ᗩɴᴅ YᴏᴜTᴜʙ ᒪɪɴᴋ...!")
 
     if message.chat.id in callsmusic.pytgcalls.active_calls:
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo=f"{QUE_IMG}",
         reply_markup=keyboard,
-        caption=f"#⃣  ʏᴏᴜʀ ʀᴇQᴜᴇꜱᴛᴇᴅ ꜱᴏɴɢ ɪɴ **Qᴜᴇᴜᴇ** ᴀᴛ ᴘᴏꜱɪᴛɪᴏɴ {position} !\n\n⚡ __ᴘᴏᴡᴇʀᴇᴅ ʙʏ {bn} ᴢᴀɪᴅ__")
+        caption=f"#⃣  Yᴏᴜʀ ᖇᴇQᴜᴇꜱᴛᴇᴅ Տᴏɴɢ Iɴ **Qᴜᴇᴜᴇ** ᗩᴛ ᑭᴏꜱɪᴛɪᴏɴ {position} !\n\n⚡ __ᑭᴏᴡᴇʀᴇᴅ ᗷʏ {bn} ᗷʟᴀᴢᴇ ᑎᴇᴛᴡᴏʀᴋ__")
         return await lel.delete()
     else:
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
@@ -70,6 +70,6 @@ async def stream(_, message: Message):
         await message.reply_photo(
         photo=f"{AUD_IMG}",
         reply_markup=keyboard,
-        caption=f"💡 **ɴᴏᴡ ᴘʟᴀʏɪɴɢ** ᴀ ꜱᴏɴɢ ʀᴇQᴜᴇᴛᴇᴅ ʙʏ {costumer} !\n\n⚡ __ᴘᴏᴡᴇʀᴇᴅ ʙʏ {bn} ᴢᴀɪᴅ__"
+        caption=f"💡 **ᑎᴏᴡ ᑭʟᴀʏɪɴɢ** ᗩ Տᴏɴɢ ᖇᴇQᴜᴇᴛᴇᴅ ᗷʏ {costumer} !\n\n⚡ __ᑭᴏᴡᴇʀᴇᴅ ᗷʏ {bn} ᗷʟᴀᴢᴇ ᑎᴇᴛᴡᴏʀᴋ__"
         )
         return await lel.delete()
