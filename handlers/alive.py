@@ -40,7 +40,7 @@ async def alive(client: Client, message: Message):
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_photo(
         photo=f"{BOT_IMG}",
-        caption=f"""**╰┈➤ ᕼᴇʟʟᴏ👋..**\n**╰┈➤ ᗰʏ Տᴇʟғ {BOT_NAME}**\n\n**╰┈➤ __ᗷʟᴀᴢᴇ ᗩʀᴇ ᗯᴏʀᴋɪɴɢ__...**\n**╰┈➤ ᐯᴇʀsᴏɪɴ : 06:03.718**\n**╰┈➤ ᑌᴘᴛɪᴍᴇ : {uptime}**\n**╰┈➤ ᗰY ᗩssɪsᴛᴀɴᴛ :** __{ASSISTANT_NAME}__\n\n**╰┈➤ 📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :『ᗷʟᴀᴢᴇ ᑎᴇᴛᴡᴏʀᴋ』**\n\n**   Tʜᴀɴᴋɪɴɢ Yᴏᴜ ᖴᴏʀ ᑌsᴇɪɴɢ Tʜɪs ᗷᴏᴛ..🤗**""",
+        caption=f"""**╰┈➤ ᕼᴇʟʟᴏ👋..**\n**╰┈➤ ᗰʏ Տᴇʟғ {BOT_NAME}**\n\n**╰┈➤ __ᗷʟᴀᴢᴇ Is ᗯᴏʀᴋɪɴɢ__...**\n**╰┈➤ ᐯᴇʀsᴏɪɴ : 06:03.718**\n**╰┈➤ ᑌᴘᴛɪᴍᴇ : {uptime}**\n**╰┈➤ ᗰY ᗩssɪsᴛᴀɴᴛ :** __@{ASSISTANT_NAME}__\n\n**╰┈➤ 📢 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 :『ᗷʟᴀᴢᴇ ᑎᴇᴛᴡᴏʀᴋ』**\n\n**   Tʜᴀɴᴋɪɴɢ Yᴏᴜ ᖴᴏʀ ᑌsᴇɪɴɢ Tʜɪs ᗷᴏᴛ..🤗**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
