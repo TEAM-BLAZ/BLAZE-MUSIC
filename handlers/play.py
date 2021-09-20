@@ -526,10 +526,11 @@ async def play(_, message: Message):
         appendable = [s_name, r_by, loc]
         qeue.append(appendable)
         await message.reply_photo(
-        photo="final.png", 
-        caption="💡 **Tʀᴀᴄᴋ Iɴ ᑫᴜᴇᴜᴇ**\n\n🏷 **ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 ** ᑌꜱᴇʀ ᗷʏ:** {}\n" \
-               +f"\n🔢 **Tʀᴀᴄᴋ ᑭᴏꜱɪᴛɪᴏɴ:**  {position}!",
-        reply_markup=keyboard,
+        photo="final.png",
+        reply_markup=keyboard, 
+        caption="▶️ **Playing** Here The Song Requested By {}".format(
+        message.from_user.mention()
+        ),               
         )
         os.remove("final.png")
         return await lel.delete()
@@ -550,8 +551,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="💡 **Tʀᴀᴄᴋ Iɴ ᑫᴜᴇᴜᴇ**\n\n🏷 **ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 ** ᑌꜱᴇʀ ᗷʏ:** {}\n" \
-               +f"\n🔢 **Tʀᴀᴄᴋ ᑭᴏꜱɪᴛɪᴏɴ:** {position} ".format(
+        caption="▶️ **Playing** Here The Song Requested By {}".format(
         message.from_user.mention()
         ),
     )
