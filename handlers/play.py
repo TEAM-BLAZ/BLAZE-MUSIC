@@ -778,8 +778,8 @@ async def ytplay(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **ᑎᴀᴍᴇ:** [{title[:25]}]({url})\n⏱ ** ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😍 **Տᴛᴀᴛᴜꜱ:** `Qᴜᴇᴜᴇᴅ Iɴ ᑭᴏꜱɪᴛɪᴏɴ {position}`\n" \
-                    + f"🎧 **ᑌꜱᴇʀ ᗷʏ:** {message.from_user.mention}",
+            caption=f"💡 **Tʀᴀᴄᴋ Iɴ ᑫᴜᴇᴜᴇ**\n\n🏷 **ᑎᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᗪᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 ** ᑌꜱᴇʀ ᗷʏ:** {r_by.mention}\n" \
+               +f"\n🔢 **Tʀᴀᴄᴋ ᑭᴏꜱɪᴛɪᴏɴ:**  {position} ",
                    reply_markup=keyboard,
         )
         os.remove("final.png")
