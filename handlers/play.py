@@ -421,7 +421,7 @@ async def m_cb(b, cb):
 @Client.on_message(command("play") & other_filters)
 async def play(_, message: Message):
     global que
-    lel = await message.reply("🔄 __**RUKO JRA SABER KRO.. CHLA RHA HU...__ **")
+    lel = await message.reply("🔄 __**RUKO JRA SABER KRO..**__")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -482,7 +482,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("**🔄 __**RUKO JRA SABER KRO.. CHLA RHA HU...__**")
+    await lel.edit("🔄 __**CHLA RHA HU...**__")
     ydl_opts = {"format": "bestaudio/best"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -496,9 +496,9 @@ async def play(_, message: Message):
         duration = results[0]["duration"]
         url_suffix = results[0]["url_suffix"]
         views = results[0]["views"]
-
+        duration = round(audio.duration / 60)
     except Exception as e:
-        await lel.edit("SONG NOT FOUND.TRY ANOTHER SONG OR MAYBE SPELL IT PROPERLY....")
+        await lel.edit("**SONG NOT FOUND.TRY ANOTHER SONG OR MAYBE SPELL IT PROPERLY....**")
         print(str(e))
         return
 
@@ -528,7 +528,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard, 
-        caption="▶️ **Playing** Here The Song Requested By {}".format(
+        caption="▶️ **Playing** Here The Song Requested By {}  `{duration}` ".format(
         message.from_user.mention()
         ),               
         )
@@ -551,7 +551,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Playing** Here The Song Requested By {}".format(
+        caption="▶️ **Playing** Here The Song Requested By {}  `{duration}` ".format(
         message.from_user.mention()
         ),
     )
@@ -559,7 +559,7 @@ async def play(_, message: Message):
     return await lel.delete()
 
 
-@Client.on_callback_query(filters.regex(pattern=r"plll"))
+@Client.on_callback_query(filters.regex(pattern=r"ply"))
 async def lol_cb(b, cb):
     global que
     cbd = cb.data.strip()
@@ -572,7 +572,7 @@ async def lol_cb(b, cb):
         return
     useer_id = int(useer_id)
     if cb.from_user.id != useer_id:
-        await cb.answer("ʙʜᴀɢɢ ᴊᴀᴀ ʏʜᴀ ꜱᴇ ʙꜱᴅᴋ !", show_alert=True)
+        await cb.answer("ʙʜᴀɢɢ ᴊᴀᴀ ʏʜᴀ ꜱᴇ  !", show_alert=True)
         return
     #await cb.message.edit("🔁 **processing...**")
     x=int(x)
